@@ -1,0 +1,11 @@
+class Project < ActiveRecord::Base
+	def self.all_users
+		projects = Project.all
+		users = []
+		projects.each do |project|
+			users.push(project.user)
+		end
+		#["Coulson", "Ward", "May", "Skye", "Fitz", "Simmons"]
+		return users.uniq.sort
+	end
+end

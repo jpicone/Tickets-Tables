@@ -12,7 +12,9 @@ Rottenpotatoes::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-	get ':controller/:action', to: :sortTable
+	get ':controller/:action/:category/:filter', to: :sortTable
+	get ':controller/:action/:category', to: :sortTable
+	
   resources :projects
   root :to => redirect('/projects')
   # Sample resource route with options:

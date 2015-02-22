@@ -16,6 +16,12 @@ a {
   text-decoration: underline;
   font-weight: bold;
 }
+	a.Table-Header{
+		text-decoration:none;
+	}
+		.Table-Header:hover{
+			color: #0099cc;
+		}
 h1 {
   color: black;
   font-size: 150%;
@@ -51,8 +57,8 @@ table#projects th, table#projects td {
   border-bottom: 1px solid grey;
 }
 table#projects th.hilite {
-  background-color: #707070;
-  color: white;
+  background-color: yellow;
+  /*color: white;*/
 }
 #notice #warning {
   background: rosybrown;
@@ -64,8 +70,4 @@ form label {
   line-height: 25px;
   font-weight: bold;
   color: maroon;
-}
-.Table-Header:hover{
-	color: lightgrey;
-	font-weight: bold;
 }
