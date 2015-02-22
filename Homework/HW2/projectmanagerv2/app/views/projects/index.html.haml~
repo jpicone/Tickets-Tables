@@ -4,10 +4,14 @@
 %table#projects
   %thead
     %tr
-      %th Task Title
-      %th Task Details
-      %th Assigned User
-      %th Due Date
+      %th
+        %a{ :href => "/projects/sortTable/title", :id => "title_header", :class => "Table-Header"} Task Title
+      %th
+        %a{ :href => "/projects/sortTable/description", :id => "title_header", :class => "Table-Header"} Task Details
+      %th
+        %a{ :href => "/projects/sortTable/user", :id => "title_header", :class => "Table-Header"} Assigned User
+      %th
+        %a{ :href => "/projects/sortTable/due_date", :id => "title_header", :class => "Table-Header"} Due Date
 
   %tbody
     - @projects.each do |project|
@@ -15,6 +19,6 @@
         %td= project.title 
         %td= link_to "More about #{project.title}", project_path(project)
         %td= project.user
-        %td= project.due_date
+        %td= project.due_date.to_formatted_s(:long)
 
 = link_to 'Add new project task', new_project_path

@@ -37,5 +37,9 @@ class ProjectsController < ApplicationController
     flash[:notice] = "Project '#{@project.title}' deleted."
     redirect_to projects_path
   end
-
+	
+	def sortTable
+		@projects = Project.order("#{params[:category]} ASC")
+		render :template =>"/projects/index", :collection => @projects
+	end
 end

@@ -65,9 +65,6 @@ form label {
   font-weight: bold;
   color: maroon;
 }
-a.Table-Header{
-	text-decoration:none;
-}
 .Table-Header:hover{
 	color: lightgrey;
 	font-weight: bold;

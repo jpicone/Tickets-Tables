@@ -1,4 +1,4 @@
-class ProjectController < ApplicationController
+class ProjectsController < ApplicationController
 
   def show
     id = params[:id] # retrieve project task ID from URI route
@@ -8,6 +8,7 @@ class ProjectController < ApplicationController
 
   def index
     @projects = Project.all
+		#@projects = Project.order("title ASC")
   end
 
   def new
@@ -37,5 +38,9 @@ class ProjectController < ApplicationController
     flash[:notice] = "Project '#{@project.title}' deleted."
     redirect_to projects_path
   end
-
+	
+	def sortTable
+		@projects = Project.order("#{params[:category]} ASC")
+		render :template =>"/projects/index", :collection => @projects
+	end
 end
