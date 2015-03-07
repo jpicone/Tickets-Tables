@@ -1,0 +1,9 @@
+Given(/^I am on the Home Page$/) do
+end
+
+When(/^I click Login$/) do
+  find_link("Login").click
+end
+
+Then(/^I should see the Login page$/) do
+end
