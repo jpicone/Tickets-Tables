@@ -40,6 +40,6 @@ Then /I should see all the tasks/ do
 			page.body.should =~ /#{task.title}/m
 		end
 	else
-		fail
+		false
 	end
 end

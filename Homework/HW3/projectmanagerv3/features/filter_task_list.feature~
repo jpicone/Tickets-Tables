@@ -55,3 +55,11 @@ Scenario: all users selected
 	And I press "Refresh"
 
 	Then I should see all the tasks
+
+#Scenario: no users selected
+  When I unselect the following users: May, Fitz, Ward, Simmons, Coulson, Skye
+
+	# Step defined in web_steps.rb
+	And I press "Refresh"
+
+	Then I should see no tasks
