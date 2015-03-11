@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../assets/application.css" />
+	</head>
+
+	<body>
+
+		
+			<h2>Reservations</h2>
+			<p>
+			 This will one day say a welcome message to visitors
+			</p>
+
+		
+	</body>
+
+</html>

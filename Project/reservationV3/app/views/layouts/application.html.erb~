@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<div id="header">
+		<img src="/images/logo.png">
+	</div>
+	<div id="nav">
+		<nav>
+			<a href="/welcome/home" class="ui-button">Home</a>
+			<a href="/welcome/login" class="ui-button">Login</a>
+		</nav>
+	</div>
+</header>
+<head>
+  <title>Reservation</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+<footer>
+	<div id="footer">
+	Boniek, Hodges,Petrick,    Picone, Schorsch
+	</div>
+</footer>
+</html>
