@@ -4,8 +4,8 @@
 		<link rel="stylesheet" type="text/css" href="../../assets/application.css" />
 	</head>
 
-	<body class="main-content">
-		
+	<body>
+			<div class="main-content">
 			<h2>Log in</h2>
 		
 			<form>
@@ -21,7 +21,7 @@
 				<input class="ui-button" type="submit" value="Submit">
 				<a href="/welcome/signup" class="ui-button">Sign Up!</a>
 			</form> 
-			
+			</div>
 	</body>
 
 </html>

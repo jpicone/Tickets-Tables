@@ -6,7 +6,7 @@
 	</head>
 
 	<body>
-		<table id="restaurants">  
+		<table id="restaurants" class="cell-border">  
 			<thead>  
 			  <tr>  
 				<th>Restaurant Name</th>
@@ -17,9 +17,9 @@
 			<tbody>
 				<% @restaurants.each do |restaurant| %>
 				<tr>  
-				  <td><%= restaurant.restaurant_name %></td>  
-				  <td><%= restaurant.address %></td>  
-				  <td><%= restaurant.phone_number %></td>  
+				  <td id="restaurant_name" name="restaurant_name"><%= restaurant.restaurant_name %></td>  
+				  <td id="address" name="address"><%= restaurant.address %></td>  
+				  <td id="phone_number" name="phone_number"><%= restaurant.phone_number %></td>  
 				</tr>
 				<% end %>
 			</tbody>  
