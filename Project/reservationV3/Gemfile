@@ -38,6 +38,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails' 
 gem 'haml'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'

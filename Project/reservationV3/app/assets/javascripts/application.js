@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_self
+//= require jquery-ui
+//= require dataTables/jquery.dataTables
 //= require_tree .

@@ -1,11 +1,10 @@
 class CreateProjects < ActiveRecord::Migration
   def up
-    create_table :projects do |t|
-      t.string :title
-      t.string :user
-      t.text :description
-      t.datetime :due_date
-      t.text :extended_description
+    create_table :restaurants do |t|
+      t.string :restaurant_name
+      t.string :store_ID
+      t.string :phone_number
+      t.string :address
       # Add fields that let Rails automatically keep track
       # of when project tasks are added or modified:
       t.timestamps
@@ -13,6 +12,6 @@ class CreateProjects < ActiveRecord::Migration
   end
 
   def down
-    drop_table :projects
+    drop_table :restaurants
   end
 end

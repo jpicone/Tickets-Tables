@@ -13,12 +13,14 @@
 
 ActiveRecord::Schema.define(version: 20111119180638) do
 
-  create_table "projects", force: true do |t|
-    t.string   "title"
-    t.string   "user"
-    t.text     "description"
-    t.datetime "due_date"
-    t.text     "extended_description"
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "restaurants", force: true do |t|
+    t.string   "restaurant_name"
+    t.string   "store_ID"
+    t.string   "phone_number"
+    t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
