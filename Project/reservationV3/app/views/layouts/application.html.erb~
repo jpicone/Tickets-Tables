@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<header>	
+	<img src="/images/logo.png">
+	<ul class="nav-bar">
+		<li><a href="/welcome/home" class="nav-button">Home</a></li>
+		<li><a href="/welcome/login" class="nav-button">Login</a></li>
+	</ul>	
+</header>
+<head>
+  <title>Reservation</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+<footer>
+	<div id="footer">
+	Hodges, Petrick, Picone, Schorsch
+	</div>
+</footer>
+</html>

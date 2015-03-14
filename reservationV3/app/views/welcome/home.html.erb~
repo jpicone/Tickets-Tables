@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css" />
+</head>
+
+<body>
+
+<div id="header">
+<img src="/images/logo.png">
+</div>
+
+<div id="nav">
+ <%= button_to "Home", welcome_home_path, :method => "get" %>
+<%= button_to "Login", welcome_login_path, :method => "get" %>
+<%= button_to "Signup", welcome_signup_path, :method => "get" %>
+</div>
+
+<div id="section">
+<h2>Reservations</h2>
+<p>
+ This will one day say a welcome message to visitors
+</p>
+
+</div>
+
+<div id="footer">
+Hodges, Petrick, Picone, Schorsch
+</div>
+
+</body>
+</html>
