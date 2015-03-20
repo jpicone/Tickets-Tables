@@ -3,7 +3,7 @@ class CreateReservations < ActiveRecord::Migration
     create_table :reservations do |t|
       t.integer :restaurant_ID
       t.datetime :reservation_date_time
-      t.integer :party_sizes
+      t.integer :party_size
       t.text :notes
       t.integer :user_ID
       # Add fields that let Rails automatically keep track
