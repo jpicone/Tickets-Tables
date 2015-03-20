@@ -28,7 +28,7 @@ Then(/^I should see the Log In page$/) do
 end
 
 Then(/^I should see the Sign Up page$/) do
-  text = "Sign Up"
+  text = "Sign up"
   page.should have_content(text)
 end
 

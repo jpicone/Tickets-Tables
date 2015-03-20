@@ -1,4 +1,4 @@
-class CreateProjects < ActiveRecord::Migration
+class CreateRestaurants < ActiveRecord::Migration
   def up
     create_table :restaurants do |t|
       t.string :restaurant_name

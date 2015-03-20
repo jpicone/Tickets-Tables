@@ -3126,3 +3126,172 @@ Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
   [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "restaurants" DISABLE TRIGGER ALL
   [1m[36m (3.0ms)[0m  [1mTRUNCATE TABLE "restaurants" RESTART IDENTITY CASCADE;[0m
   [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "restaurants" ENABLE TRIGGER ALL
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/welcome/home" for 127.0.0.1 at 2015-03-19 15:23:41 -0600
+Processing by WelcomeController#home as HTML
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered welcome/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+Started GET "/welcome/login" for 127.0.0.1 at 2015-03-19 15:23:41 -0600
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "restaurants" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (1.1ms)[0m  select table_name from information_schema.views where table_schema = 'myapp_test'
+  [1m[36m (12.9ms)[0m  [1mTRUNCATE TABLE "restaurants" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "restaurants" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+Started GET "/welcome/home" for 127.0.0.1 at 2015-03-19 15:23:41 -0600
+Processing by WelcomeController#home as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered welcome/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+Started GET "/welcome/signup" for 127.0.0.1 at 2015-03-19 15:23:41 -0600
+Processing by WelcomeController#signup as HTML
+  Rendered welcome/signup.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ALTER TABLE "restaurants" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (3.8ms)[0m  [1mTRUNCATE TABLE "restaurants" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "restaurants" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "900"], ["created_at", "2015-03-19 21:23:41.769852"], ["phone_number", "000-000-0009"], ["restaurant_name", "Outback Steakhouse"], ["updated_at", "2015-03-19 21:23:41.769852"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "800"], ["created_at", "2015-03-19 21:23:41.773428"], ["phone_number", "000-000-0003"], ["restaurant_name", "Chipotle"], ["updated_at", "2015-03-19 21:23:41.773428"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 21:23:41.774885"], ["phone_number", "000-000-0008"], ["restaurant_name", "MacNGrill"], ["updated_at", "2015-03-19 21:23:41.774885"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "700"], ["created_at", "2015-03-19 21:23:41.776419"], ["phone_number", "000-000-0007"], ["restaurant_name", "McDonalds"], ["updated_at", "2015-03-19 21:23:41.776419"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "150"], ["created_at", "2015-03-19 21:23:41.777678"], ["phone_number", "000-000-0002"], ["restaurant_name", "Zios"], ["updated_at", "2015-03-19 21:23:41.777678"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "500"], ["created_at", "2015-03-19 21:23:41.779505"], ["phone_number", "000-000-0001"], ["restaurant_name", "Olive Garden"], ["updated_at", "2015-03-19 21:23:41.779505"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Started GET "/welcome/home" for 127.0.0.1 at 2015-03-19 15:23:41 -0600
+Processing by WelcomeController#home as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered welcome/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "restaurants" DISABLE TRIGGER ALL
+  [1m[36m (5.8ms)[0m  [1mTRUNCATE TABLE "restaurants" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "restaurants" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "900"], ["created_at", "2015-03-19 21:23:41.802091"], ["phone_number", "000-000-0009"], ["restaurant_name", "Outback Steakhouse"], ["updated_at", "2015-03-19 21:23:41.802091"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "800"], ["created_at", "2015-03-19 21:23:41.803836"], ["phone_number", "000-000-0003"], ["restaurant_name", "Chipotle"], ["updated_at", "2015-03-19 21:23:41.803836"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 21:23:41.805176"], ["phone_number", "000-000-0008"], ["restaurant_name", "MacNGrill"], ["updated_at", "2015-03-19 21:23:41.805176"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "700"], ["created_at", "2015-03-19 21:23:41.806301"], ["phone_number", "000-000-0007"], ["restaurant_name", "McDonalds"], ["updated_at", "2015-03-19 21:23:41.806301"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "150"], ["created_at", "2015-03-19 21:23:41.808242"], ["phone_number", "000-000-0002"], ["restaurant_name", "Zios"], ["updated_at", "2015-03-19 21:23:41.808242"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "500"], ["created_at", "2015-03-19 21:23:41.811474"], ["phone_number", "000-000-0001"], ["restaurant_name", "Olive Garden"], ["updated_at", "2015-03-19 21:23:41.811474"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Started GET "/welcome/home" for 127.0.0.1 at 2015-03-19 15:23:41 -0600
+Processing by WelcomeController#home as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered welcome/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "restaurants" DISABLE TRIGGER ALL
+  [1m[36m (4.6ms)[0m  [1mTRUNCATE TABLE "restaurants" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "restaurants" ENABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "900"], ["created_at", "2015-03-19 21:23:41.826811"], ["phone_number", "000-000-0009"], ["restaurant_name", "Outback Steakhouse"], ["updated_at", "2015-03-19 21:23:41.826811"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "800"], ["created_at", "2015-03-19 21:23:41.828051"], ["phone_number", "000-000-0003"], ["restaurant_name", "Chipotle"], ["updated_at", "2015-03-19 21:23:41.828051"]]
+  [1m[35m (4.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 21:23:41.833798"], ["phone_number", "000-000-0008"], ["restaurant_name", "MacNGrill"], ["updated_at", "2015-03-19 21:23:41.833798"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "700"], ["created_at", "2015-03-19 21:23:41.835364"], ["phone_number", "000-000-0007"], ["restaurant_name", "McDonalds"], ["updated_at", "2015-03-19 21:23:41.835364"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["address", "150"], ["created_at", "2015-03-19 21:23:41.836836"], ["phone_number", "000-000-0002"], ["restaurant_name", "Zios"], ["updated_at", "2015-03-19 21:23:41.836836"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["address", "500"], ["created_at", "2015-03-19 21:23:41.838207"], ["phone_number", "000-000-0001"], ["restaurant_name", "Olive Garden"], ["updated_at", "2015-03-19 21:23:41.838207"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+Started GET "/welcome/home" for 127.0.0.1 at 2015-03-19 15:23:41 -0600
+Processing by WelcomeController#home as HTML
+  [1m[36mRestaurant Load (0.5ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "restaurants" DISABLE TRIGGER ALL
+  [1m[36m (4.0ms)[0m  [1mTRUNCATE TABLE "restaurants" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "restaurants" ENABLE TRIGGER ALL
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m

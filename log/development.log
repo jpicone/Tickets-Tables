@@ -25476,3 +25476,1142 @@ Started GET "/assets/dataTables/jquery.dataTables-faa0991937d3877b1d5f8760a41019
 
 
 Started GET "/assets/welcome-3c185d7d5b4635ce48a1d444ccac60ee.js?body=1" for 127.0.0.1 at 2015-03-13 22:29:59 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-19 15:22:53 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  [1m[35mRestaurant Load (0.5ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered welcome/home.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 835ms (Views: 827.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-19 15:22:54 -0600
+Processing by WelcomeController#home as HTML
+  [1m[36mRestaurant Load (4.8ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered welcome/home.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 389ms (Views: 384.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/jquery-ui/theme-0102a07660862a58dead68eb0c56bb06.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/core-742b09a360cfc2c2cd0de51b3e54778f.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/accordion-47fff7eb6e17aa23183d56dc6da72c0d.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/menu-d0a428058ef50f8a8cb6013c33cfa3a9.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/autocomplete-a68bba389b379e9ebeb471242eff8ebf.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/button-e8efa6c823316ead0ff1080237a46ed5.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker-9805af7484bbef74bdfb9ea2aba4d918.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/draggable-1692b1f8ae942d703fb38b769b64727a.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/resizable-fdb2660923da5b6ed4987640b02db1f3.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/dialog-e651bc9ca99edc0f88fc5ced5a5b2d8e.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/progressbar-4016a8fcdbe25916ea7d2460b343e384.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/selectable-548c5e3036424f53cc201653dfcd39ef.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/selectmenu-6e8df63a5d2d216cb2806f58304b9b4e.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/sortable-e3da10551b7ffdfcf7d8e286e2d0b1cf.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/slider-3cda04d7176a8f81867cdc4270e223f3.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/spinner-25aaf06a2d7cdf63a348ce122f9e03f9.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/tabs-6b9836075fb2f67bf7722b347148bab1.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/theme-0102a07660862a58dead68eb0c56bb06.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/core-742b09a360cfc2c2cd0de51b3e54778f.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/accordion-47fff7eb6e17aa23183d56dc6da72c0d.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/menu-d0a428058ef50f8a8cb6013c33cfa3a9.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/autocomplete-a68bba389b379e9ebeb471242eff8ebf.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/button-e8efa6c823316ead0ff1080237a46ed5.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker-9805af7484bbef74bdfb9ea2aba4d918.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/draggable-1692b1f8ae942d703fb38b769b64727a.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/resizable-fdb2660923da5b6ed4987640b02db1f3.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/dialog-e651bc9ca99edc0f88fc5ced5a5b2d8e.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/progressbar-4016a8fcdbe25916ea7d2460b343e384.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/dataTables/jquery.dataTables-9f23fd866b7ffec394afddd0b0d4e8a6.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/selectable-548c5e3036424f53cc201653dfcd39ef.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/selectmenu-6e8df63a5d2d216cb2806f58304b9b4e.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/sortable-e3da10551b7ffdfcf7d8e286e2d0b1cf.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/slider-3cda04d7176a8f81867cdc4270e223f3.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/spinner-25aaf06a2d7cdf63a348ce122f9e03f9.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/tabs-6b9836075fb2f67bf7722b347148bab1.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-b7afb480f12ac45219bdf0219658d48d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery_ujs-1e6800b53f20281b47ca68085ec4f37b.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/turbolinks-77c2d92ff152522683f03d13a8f2193b.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/core-507a3c5c64db2897722efbaac704f65a.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/widget-f115c9d86339673dae6009660abebf73.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/accordion-e6fe468db6eab6480fb9303fd64d169d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/position-6852784c7e4af723a12d9f65c17a5be4.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/menu-9a32026db469790351a86321b82cdbbe.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/autocomplete-ec3327c45fffccd4aebace1b0951eee5.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/button-2d3e26d5b8546eb34d71811db1225122.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/tooltip-36716a6c55def5fbfa1913e506f1abb8.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/base-8bb7c4a74e4921737b7a5c8126621dc7.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/all-ddc189b981f626090ef3a0aaa6388f28.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui-ddc189b981f626090ef3a0aaa6388f28.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/dataTables/jquery.dataTables-9f23fd866b7ffec394afddd0b0d4e8a6.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-b7afb480f12ac45219bdf0219658d48d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery_ujs-1e6800b53f20281b47ca68085ec4f37b.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/turbolinks-77c2d92ff152522683f03d13a8f2193b.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/core-507a3c5c64db2897722efbaac704f65a.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/tooltip-36716a6c55def5fbfa1913e506f1abb8.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/base-8bb7c4a74e4921737b7a5c8126621dc7.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/all-ddc189b981f626090ef3a0aaa6388f28.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui-ddc189b981f626090ef3a0aaa6388f28.css?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/widget-f115c9d86339673dae6009660abebf73.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/accordion-e6fe468db6eab6480fb9303fd64d169d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/position-6852784c7e4af723a12d9f65c17a5be4.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/menu-9a32026db469790351a86321b82cdbbe.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/autocomplete-ec3327c45fffccd4aebace1b0951eee5.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/button-2d3e26d5b8546eb34d71811db1225122.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:55 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker-b8e9e62c172b269c79d51a32793a9b36.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/mouse-3c5586c786016951cf3c433b633bb980.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/draggable-a445ecf5a538c16be3a58f193d263cc7.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/resizable-4abc27c219802f7276935f3b6e0df929.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/dialog-6c469213ded6d9811ba173502da8c9a1.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/droppable-49e76e6295244f0340d990d2a936524b.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-ccf03efd07ffdfd2ab817ee7ba447750.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-blind-834a6e4ba2ba6586107e82fd5a49494a.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-bounce-4fbda809c35fc6f4c15469270dba6027.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-clip-fe6b7ef4f5ceb6e4fdb9f7d9de089ffa.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-drop-b99c16a0989e48646b7ad2483e531b05.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-explode-d12030c2713e32f1ff9cb430599a0e0d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker-b8e9e62c172b269c79d51a32793a9b36.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/mouse-3c5586c786016951cf3c433b633bb980.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/draggable-a445ecf5a538c16be3a58f193d263cc7.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/resizable-4abc27c219802f7276935f3b6e0df929.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/dialog-6c469213ded6d9811ba173502da8c9a1.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/droppable-49e76e6295244f0340d990d2a936524b.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-ccf03efd07ffdfd2ab817ee7ba447750.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-blind-834a6e4ba2ba6586107e82fd5a49494a.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-bounce-4fbda809c35fc6f4c15469270dba6027.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-clip-fe6b7ef4f5ceb6e4fdb9f7d9de089ffa.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-drop-b99c16a0989e48646b7ad2483e531b05.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-explode-d12030c2713e32f1ff9cb430599a0e0d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-fade-36a73fba1983487d9eaed88b6b9d497f.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-fold-588e30fb254514d131ffb2984eec03db.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-fade-36a73fba1983487d9eaed88b6b9d497f.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-fold-588e30fb254514d131ffb2984eec03db.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-highlight-d70dba13408479f2bfa24b427890d0d9.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-size-7ee04666fff83ecb3575e68bbeab4c4b.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-scale-a1c12db894784204664d3b3aab4905de.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-puff-b85d9e6efaf0e11b4966db12b197c21d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-pulsate-6154cb41fbe16b6baadb9851578e4949.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-shake-1efcb523838439deff322207cf83db07.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-slide-5c78685f6d794176342fbc89207f1f77.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/effect-transfer-29bd88278c8ffc38317bd5e56004f39d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/progressbar-92fe8d5bf7c5080236ef10e170b25242.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/selectable-38055a6c6e726960386ba079c26ade72.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/selectmenu-4fe76b22bb9b990cfe4ae93b52db2f0e.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/slider-94f23deac1fe74133a0431f7391c19b7.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/sortable-f97bc8306b1590bc4df6bbb22b465d00.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/spinner-67ed527c4d9a26c157b29b15231045dc.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/tabs-14a51e5b182938a8c907b09d4159c418.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui/tooltip-c8ca6f9024918563274bb331c3c7654e.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/jquery-ui-48d20e0f355af89d925cf70f9ff28cd4.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:56 -0600
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/dataTables/jquery.dataTables-faa0991937d3877b1d5f8760a4101959.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/welcome-3c185d7d5b4635ce48a1d444ccac60ee.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/effect-highlight-d70dba13408479f2bfa24b427890d0d9.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/effect-size-7ee04666fff83ecb3575e68bbeab4c4b.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/effect-scale-a1c12db894784204664d3b3aab4905de.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/effect-puff-b85d9e6efaf0e11b4966db12b197c21d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/effect-pulsate-6154cb41fbe16b6baadb9851578e4949.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/effect-shake-1efcb523838439deff322207cf83db07.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/effect-slide-5c78685f6d794176342fbc89207f1f77.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/effect-transfer-29bd88278c8ffc38317bd5e56004f39d.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/progressbar-92fe8d5bf7c5080236ef10e170b25242.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/selectable-38055a6c6e726960386ba079c26ade72.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/selectmenu-4fe76b22bb9b990cfe4ae93b52db2f0e.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/slider-94f23deac1fe74133a0431f7391c19b7.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/sortable-f97bc8306b1590bc4df6bbb22b465d00.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/spinner-67ed527c4d9a26c157b29b15231045dc.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/tabs-14a51e5b182938a8c907b09d4159c418.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui/tooltip-c8ca6f9024918563274bb331c3c7654e.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/jquery-ui-48d20e0f355af89d925cf70f9ff28cd4.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/dataTables/jquery.dataTables-faa0991937d3877b1d5f8760a4101959.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/welcome-3c185d7d5b4635ce48a1d444ccac60ee.js?body=1" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-03-19 15:22:57 -0600
+  [1m[36m (104.7ms)[0m  [1mDROP DATABASE IF EXISTS "myapp_test"[0m
+  [1m[35m (310.9ms)[0m  CREATE DATABASE "myapp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (8.6ms)[0m  CREATE TABLE "restaurants" ("id" serial primary key, "restaurant_name" character varying(255), "store_ID" character varying(255), "phone_number" character varying(255), "address" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20111119180638')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReservations (20140319180638)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReservations (20140319180638)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReservations (20140319180638)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (13.5ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140319180638"]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "900"], ["created_at", "2015-03-19 21:52:11.681130"], ["phone_number", "000-000-0009"], ["restaurant_name", "Outback"], ["store_ID", "00001"], ["updated_at", "2015-03-19 21:52:11.681130"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "800"], ["created_at", "2015-03-19 21:52:11.686839"], ["phone_number", "000-000-0008"], ["restaurant_name", "Chipotle"], ["store_ID", "00002"], ["updated_at", "2015-03-19 21:52:11.686839"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "700"], ["created_at", "2015-03-19 21:52:11.688262"], ["phone_number", "000-000-0007"], ["restaurant_name", "McDonalds"], ["store_ID", "00003"], ["updated_at", "2015-03-19 21:52:11.688262"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 21:52:11.689587"], ["phone_number", "000-000-0006"], ["restaurant_name", "MacNGrill"], ["store_ID", "00004"], ["updated_at", "2015-03-19 21:52:11.689587"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "500"], ["created_at", "2015-03-19 21:52:11.690949"], ["phone_number", "000-000-0005"], ["restaurant_name", "Olive Garden"], ["store_ID", "00005"], ["updated_at", "2015-03-19 21:52:11.690949"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 21:52:11.692301"], ["phone_number", "000-000-0004"], ["restaurant_name", "Red Robin"], ["store_ID", "00006"], ["updated_at", "2015-03-19 21:52:11.692301"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "300"], ["created_at", "2015-03-19 21:52:11.693753"], ["phone_number", "000-000-0003"], ["restaurant_name", "Pita Pit"], ["store_ID", "00007"], ["updated_at", "2015-03-19 21:52:11.693753"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "100"], ["created_at", "2015-03-19 21:52:11.694966"], ["phone_number", "000-000-0002"], ["restaurant_name", "The Blue Star"], ["store_ID", "00008"], ["updated_at", "2015-03-19 21:52:11.694966"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "reservations" ("created_at", "notes", "party_size", "restaurant_ID", "updated_at", "user_ID") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2015-03-19 21:52:11.701806"], ["notes", "test"], ["party_size", 2], ["restaurant_ID", 1], ["updated_at", "2015-03-19 21:52:11.701806"], ["user_ID", 0]]
+  [1m[35m (0.7ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-19 15:53:15 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  [1m[35mRestaurant Load (0.9ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered welcome/home.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 939ms (Views: 892.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-19 15:53:16 -0600
+Processing by WelcomeController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered welcome/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 390ms (Views: 389.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery-ui/theme-0102a07660862a58dead68eb0c56bb06.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/core-742b09a360cfc2c2cd0de51b3e54778f.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/accordion-47fff7eb6e17aa23183d56dc6da72c0d.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/menu-d0a428058ef50f8a8cb6013c33cfa3a9.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/autocomplete-a68bba389b379e9ebeb471242eff8ebf.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/button-e8efa6c823316ead0ff1080237a46ed5.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/progressbar-4016a8fcdbe25916ea7d2460b343e384.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/selectable-548c5e3036424f53cc201653dfcd39ef.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/selectmenu-6e8df63a5d2d216cb2806f58304b9b4e.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/sortable-e3da10551b7ffdfcf7d8e286e2d0b1cf.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/slider-3cda04d7176a8f81867cdc4270e223f3.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/spinner-25aaf06a2d7cdf63a348ce122f9e03f9.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/tabs-6b9836075fb2f67bf7722b347148bab1.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/tooltip-36716a6c55def5fbfa1913e506f1abb8.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/base-8bb7c4a74e4921737b7a5c8126621dc7.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/all-ddc189b981f626090ef3a0aaa6388f28.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui-ddc189b981f626090ef3a0aaa6388f28.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/dataTables/jquery.dataTables-9f23fd866b7ffec394afddd0b0d4e8a6.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/theme-0102a07660862a58dead68eb0c56bb06.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/core-742b09a360cfc2c2cd0de51b3e54778f.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/accordion-47fff7eb6e17aa23183d56dc6da72c0d.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/menu-d0a428058ef50f8a8cb6013c33cfa3a9.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/autocomplete-a68bba389b379e9ebeb471242eff8ebf.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/button-e8efa6c823316ead0ff1080237a46ed5.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-b7afb480f12ac45219bdf0219658d48d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery_ujs-1e6800b53f20281b47ca68085ec4f37b.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/turbolinks-77c2d92ff152522683f03d13a8f2193b.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/core-507a3c5c64db2897722efbaac704f65a.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/widget-f115c9d86339673dae6009660abebf73.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/accordion-e6fe468db6eab6480fb9303fd64d169d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/position-6852784c7e4af723a12d9f65c17a5be4.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/menu-9a32026db469790351a86321b82cdbbe.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/autocomplete-ec3327c45fffccd4aebace1b0951eee5.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/button-2d3e26d5b8546eb34d71811db1225122.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker-9805af7484bbef74bdfb9ea2aba4d918.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/draggable-1692b1f8ae942d703fb38b769b64727a.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/resizable-fdb2660923da5b6ed4987640b02db1f3.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/dialog-e651bc9ca99edc0f88fc5ced5a5b2d8e.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:17 -0600
+
+
+Started GET "/assets/jquery-ui/progressbar-4016a8fcdbe25916ea7d2460b343e384.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/selectable-548c5e3036424f53cc201653dfcd39ef.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/selectmenu-6e8df63a5d2d216cb2806f58304b9b4e.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker-9805af7484bbef74bdfb9ea2aba4d918.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/draggable-1692b1f8ae942d703fb38b769b64727a.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/sortable-e3da10551b7ffdfcf7d8e286e2d0b1cf.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/slider-3cda04d7176a8f81867cdc4270e223f3.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/spinner-25aaf06a2d7cdf63a348ce122f9e03f9.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/tabs-6b9836075fb2f67bf7722b347148bab1.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/tooltip-36716a6c55def5fbfa1913e506f1abb8.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/resizable-fdb2660923da5b6ed4987640b02db1f3.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/dialog-e651bc9ca99edc0f88fc5ced5a5b2d8e.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/base-8bb7c4a74e4921737b7a5c8126621dc7.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/all-ddc189b981f626090ef3a0aaa6388f28.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui-ddc189b981f626090ef3a0aaa6388f28.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/dataTables/jquery.dataTables-9f23fd866b7ffec394afddd0b0d4e8a6.css?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-b7afb480f12ac45219bdf0219658d48d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery_ujs-1e6800b53f20281b47ca68085ec4f37b.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/turbolinks-77c2d92ff152522683f03d13a8f2193b.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/core-507a3c5c64db2897722efbaac704f65a.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/widget-f115c9d86339673dae6009660abebf73.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/accordion-e6fe468db6eab6480fb9303fd64d169d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/position-6852784c7e4af723a12d9f65c17a5be4.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/menu-9a32026db469790351a86321b82cdbbe.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/autocomplete-ec3327c45fffccd4aebace1b0951eee5.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/button-2d3e26d5b8546eb34d71811db1225122.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker-b8e9e62c172b269c79d51a32793a9b36.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/mouse-3c5586c786016951cf3c433b633bb980.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/draggable-a445ecf5a538c16be3a58f193d263cc7.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker-b8e9e62c172b269c79d51a32793a9b36.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/mouse-3c5586c786016951cf3c433b633bb980.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/draggable-a445ecf5a538c16be3a58f193d263cc7.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/resizable-4abc27c219802f7276935f3b6e0df929.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/dialog-6c469213ded6d9811ba173502da8c9a1.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/droppable-49e76e6295244f0340d990d2a936524b.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-ccf03efd07ffdfd2ab817ee7ba447750.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-blind-834a6e4ba2ba6586107e82fd5a49494a.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-bounce-4fbda809c35fc6f4c15469270dba6027.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-clip-fe6b7ef4f5ceb6e4fdb9f7d9de089ffa.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-drop-b99c16a0989e48646b7ad2483e531b05.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-explode-d12030c2713e32f1ff9cb430599a0e0d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-fade-36a73fba1983487d9eaed88b6b9d497f.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-fold-588e30fb254514d131ffb2984eec03db.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-highlight-d70dba13408479f2bfa24b427890d0d9.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-size-7ee04666fff83ecb3575e68bbeab4c4b.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-scale-a1c12db894784204664d3b3aab4905de.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-puff-b85d9e6efaf0e11b4966db12b197c21d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-pulsate-6154cb41fbe16b6baadb9851578e4949.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-shake-1efcb523838439deff322207cf83db07.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-slide-5c78685f6d794176342fbc89207f1f77.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/effect-transfer-29bd88278c8ffc38317bd5e56004f39d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:18 -0600
+
+
+Started GET "/assets/jquery-ui/progressbar-92fe8d5bf7c5080236ef10e170b25242.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/selectable-38055a6c6e726960386ba079c26ade72.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/selectmenu-4fe76b22bb9b990cfe4ae93b52db2f0e.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/slider-94f23deac1fe74133a0431f7391c19b7.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/sortable-f97bc8306b1590bc4df6bbb22b465d00.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/spinner-67ed527c4d9a26c157b29b15231045dc.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/tabs-14a51e5b182938a8c907b09d4159c418.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/tooltip-c8ca6f9024918563274bb331c3c7654e.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui-48d20e0f355af89d925cf70f9ff28cd4.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/dataTables/jquery.dataTables-faa0991937d3877b1d5f8760a4101959.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/welcome-3c185d7d5b4635ce48a1d444ccac60ee.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/resizable-4abc27c219802f7276935f3b6e0df929.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/dialog-6c469213ded6d9811ba173502da8c9a1.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/droppable-49e76e6295244f0340d990d2a936524b.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-ccf03efd07ffdfd2ab817ee7ba447750.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-blind-834a6e4ba2ba6586107e82fd5a49494a.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-bounce-4fbda809c35fc6f4c15469270dba6027.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-clip-fe6b7ef4f5ceb6e4fdb9f7d9de089ffa.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-drop-b99c16a0989e48646b7ad2483e531b05.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-explode-d12030c2713e32f1ff9cb430599a0e0d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-fade-36a73fba1983487d9eaed88b6b9d497f.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-fold-588e30fb254514d131ffb2984eec03db.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-highlight-d70dba13408479f2bfa24b427890d0d9.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-size-7ee04666fff83ecb3575e68bbeab4c4b.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-scale-a1c12db894784204664d3b3aab4905de.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-puff-b85d9e6efaf0e11b4966db12b197c21d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-pulsate-6154cb41fbe16b6baadb9851578e4949.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-shake-1efcb523838439deff322207cf83db07.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-slide-5c78685f6d794176342fbc89207f1f77.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/effect-transfer-29bd88278c8ffc38317bd5e56004f39d.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/progressbar-92fe8d5bf7c5080236ef10e170b25242.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/selectable-38055a6c6e726960386ba079c26ade72.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/selectmenu-4fe76b22bb9b990cfe4ae93b52db2f0e.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/slider-94f23deac1fe74133a0431f7391c19b7.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/sortable-f97bc8306b1590bc4df6bbb22b465d00.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/spinner-67ed527c4d9a26c157b29b15231045dc.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/tabs-14a51e5b182938a8c907b09d4159c418.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui/tooltip-c8ca6f9024918563274bb331c3c7654e.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/jquery-ui-48d20e0f355af89d925cf70f9ff28cd4.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/dataTables/jquery.dataTables-faa0991937d3877b1d5f8760a4101959.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/welcome-3c185d7d5b4635ce48a1d444ccac60ee.js?body=1" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-03-19 15:53:19 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5022.6ms)[0m  [1mDROP DATABASE IF EXISTS "myapp_development"[0m
+PG::ObjectInUse: ERROR:  database "myapp_development" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "myapp_development"
+  [1m[35m (104.4ms)[0m  DROP DATABASE IF EXISTS "myapp_test"
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "myapp_development" already exists
+: CREATE DATABASE "myapp_development" ENCODING = 'unicode'
+  [1m[35m (331.7ms)[0m  CREATE DATABASE "myapp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.0ms)[0m  DROP TABLE "reservations"
+  [1m[36m (13.6ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.8ms)[0m  DROP TABLE "restaurants"
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "restaurant_name" character varying(255), "store_ID" character varying(255), "phone_number" character varying(255), "address" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "900"], ["created_at", "2015-03-19 22:11:05.297624"], ["phone_number", "000-000-0009"], ["restaurant_name", "Outback"], ["store_ID", "00001"], ["updated_at", "2015-03-19 22:11:05.297624"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "800"], ["created_at", "2015-03-19 22:11:05.301232"], ["phone_number", "000-000-0008"], ["restaurant_name", "Chipotle"], ["store_ID", "00002"], ["updated_at", "2015-03-19 22:11:05.301232"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "700"], ["created_at", "2015-03-19 22:11:05.302733"], ["phone_number", "000-000-0007"], ["restaurant_name", "McDonalds"], ["store_ID", "00003"], ["updated_at", "2015-03-19 22:11:05.302733"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 22:11:05.304685"], ["phone_number", "000-000-0006"], ["restaurant_name", "MacNGrill"], ["store_ID", "00004"], ["updated_at", "2015-03-19 22:11:05.304685"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "500"], ["created_at", "2015-03-19 22:11:05.306039"], ["phone_number", "000-000-0005"], ["restaurant_name", "Olive Garden"], ["store_ID", "00005"], ["updated_at", "2015-03-19 22:11:05.306039"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 22:11:05.307264"], ["phone_number", "000-000-0004"], ["restaurant_name", "Red Robin"], ["store_ID", "00006"], ["updated_at", "2015-03-19 22:11:05.307264"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "300"], ["created_at", "2015-03-19 22:11:05.308714"], ["phone_number", "000-000-0003"], ["restaurant_name", "Pita Pit"], ["store_ID", "00007"], ["updated_at", "2015-03-19 22:11:05.308714"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "100"], ["created_at", "2015-03-19 22:11:05.310084"], ["phone_number", "000-000-0002"], ["restaurant_name", "The Blue Star"], ["store_ID", "00008"], ["updated_at", "2015-03-19 22:11:05.310084"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("created_at", "notes", "party_size", "restaurant_ID", "updated_at", "user_ID") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2015-03-19 22:11:05.316449"], ["notes", "test"], ["party_size", 2], ["restaurant_ID", 1], ["updated_at", "2015-03-19 22:11:05.316449"], ["user_ID", 0]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5018.1ms)[0m  [1mDROP DATABASE IF EXISTS "myapp_development"[0m
+PG::ObjectInUse: ERROR:  database "myapp_development" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "myapp_development"
+  [1m[35m (103.3ms)[0m  DROP DATABASE IF EXISTS "myapp_test"
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "myapp_development" already exists
+: CREATE DATABASE "myapp_development" ENCODING = 'unicode'
+  [1m[35m (307.3ms)[0m  CREATE DATABASE "myapp_test" ENCODING = 'unicode'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5015.0ms)[0m  [1mDROP DATABASE IF EXISTS "myapp_development"[0m
+PG::ObjectInUse: ERROR:  database "myapp_development" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "myapp_development"
+  [1m[35m (103.7ms)[0m  DROP DATABASE IF EXISTS "myapp_test"
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "myapp_development" already exists
+: CREATE DATABASE "myapp_development" ENCODING = 'unicode'
+  [1m[35m (296.8ms)[0m  CREATE DATABASE "myapp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (2.5ms)[0m  DROP TABLE "reservations"
+  [1m[36m (10.3ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (4.5ms)[0m  DROP TABLE "restaurants"
+  [1m[36m (5.7ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "restaurant_name" character varying(255), "store_ID" character varying(255), "phone_number" character varying(255), "address" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "900"], ["created_at", "2015-03-19 22:18:35.169877"], ["phone_number", "000-000-0009"], ["restaurant_name", "Outback"], ["store_ID", "00001"], ["updated_at", "2015-03-19 22:18:35.169877"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "800"], ["created_at", "2015-03-19 22:18:35.173954"], ["phone_number", "000-000-0008"], ["restaurant_name", "Chipotle"], ["store_ID", "00002"], ["updated_at", "2015-03-19 22:18:35.173954"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "700"], ["created_at", "2015-03-19 22:18:35.180310"], ["phone_number", "000-000-0007"], ["restaurant_name", "McDonalds"], ["store_ID", "00003"], ["updated_at", "2015-03-19 22:18:35.180310"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 22:18:35.182054"], ["phone_number", "000-000-0006"], ["restaurant_name", "MacNGrill"], ["store_ID", "00004"], ["updated_at", "2015-03-19 22:18:35.182054"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "500"], ["created_at", "2015-03-19 22:18:35.183477"], ["phone_number", "000-000-0005"], ["restaurant_name", "Olive Garden"], ["store_ID", "00005"], ["updated_at", "2015-03-19 22:18:35.183477"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 22:18:35.185188"], ["phone_number", "000-000-0004"], ["restaurant_name", "Red Robin"], ["store_ID", "00006"], ["updated_at", "2015-03-19 22:18:35.185188"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "300"], ["created_at", "2015-03-19 22:18:35.186821"], ["phone_number", "000-000-0003"], ["restaurant_name", "Pita Pit"], ["store_ID", "00007"], ["updated_at", "2015-03-19 22:18:35.186821"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "100"], ["created_at", "2015-03-19 22:18:35.188379"], ["phone_number", "000-000-0002"], ["restaurant_name", "The Blue Star"], ["store_ID", "00008"], ["updated_at", "2015-03-19 22:18:35.188379"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("created_at", "notes", "party_size", "restaurant_ID", "updated_at", "user_ID") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2015-03-19 22:18:35.196304"], ["notes", "test"], ["party_size", 2], ["restaurant_ID", 1], ["updated_at", "2015-03-19 22:18:35.196304"], ["user_ID", 0]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5021.0ms)[0m  [1mDROP DATABASE IF EXISTS "myapp_development"[0m
+PG::ObjectInUse: ERROR:  database "myapp_development" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "myapp_development"
+  [1m[35m (103.5ms)[0m  DROP DATABASE IF EXISTS "myapp_test"
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "myapp_development" already exists
+: CREATE DATABASE "myapp_development" ENCODING = 'unicode'
+  [1m[35m (293.7ms)[0m  CREATE DATABASE "myapp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (2.5ms)[0m  DROP TABLE "reservations"
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (6.7ms)[0m  DROP TABLE "restaurants"
+  [1m[36m (3.9ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "restaurant_name" character varying(255), "store_ID" character varying(255), "phone_number" character varying(255), "address" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "900"], ["created_at", "2015-03-19 22:20:16.160316"], ["phone_number", "000-000-0009"], ["restaurant_name", "Outback"], ["store_ID", "00001"], ["updated_at", "2015-03-19 22:20:16.160316"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "800"], ["created_at", "2015-03-19 22:20:16.164034"], ["phone_number", "000-000-0008"], ["restaurant_name", "Chipotle"], ["store_ID", "00002"], ["updated_at", "2015-03-19 22:20:16.164034"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "700"], ["created_at", "2015-03-19 22:20:16.165587"], ["phone_number", "000-000-0007"], ["restaurant_name", "McDonalds"], ["store_ID", "00003"], ["updated_at", "2015-03-19 22:20:16.165587"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 22:20:16.167443"], ["phone_number", "000-000-0006"], ["restaurant_name", "MacNGrill"], ["store_ID", "00004"], ["updated_at", "2015-03-19 22:20:16.167443"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "500"], ["created_at", "2015-03-19 22:20:16.168800"], ["phone_number", "000-000-0005"], ["restaurant_name", "Olive Garden"], ["store_ID", "00005"], ["updated_at", "2015-03-19 22:20:16.168800"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 22:20:16.170097"], ["phone_number", "000-000-0004"], ["restaurant_name", "Red Robin"], ["store_ID", "00006"], ["updated_at", "2015-03-19 22:20:16.170097"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "300"], ["created_at", "2015-03-19 22:20:16.171539"], ["phone_number", "000-000-0003"], ["restaurant_name", "Pita Pit"], ["store_ID", "00007"], ["updated_at", "2015-03-19 22:20:16.171539"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "100"], ["created_at", "2015-03-19 22:20:16.172975"], ["phone_number", "000-000-0002"], ["restaurant_name", "The Blue Star"], ["store_ID", "00008"], ["updated_at", "2015-03-19 22:20:16.172975"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("created_at", "notes", "party_size", "restaurant_ID", "updated_at", "user_ID") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2015-03-19 22:20:16.179773"], ["notes", "test"], ["party_size", 2], ["restaurant_ID", 1], ["updated_at", "2015-03-19 22:20:16.179773"], ["user_ID", 0]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (103.6ms)[0m  [1mDROP DATABASE IF EXISTS "myapp_development"[0m
+  [1m[35m (104.4ms)[0m  DROP DATABASE IF EXISTS "myapp_test"
+  [1m[36m (290.9ms)[0m  [1mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (276.2ms)[0m  CREATE DATABASE "myapp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.1ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (7.9ms)[0m  CREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "restaurant_name" character varying(255), "store_ID" character varying(255), "phone_number" character varying(255), "address" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (3.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140319180638')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20111119180638')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "900"], ["created_at", "2015-03-19 22:20:51.749228"], ["phone_number", "000-000-0009"], ["restaurant_name", "Outback"], ["store_ID", "00001"], ["updated_at", "2015-03-19 22:20:51.749228"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "800"], ["created_at", "2015-03-19 22:20:51.753781"], ["phone_number", "000-000-0008"], ["restaurant_name", "Chipotle"], ["store_ID", "00002"], ["updated_at", "2015-03-19 22:20:51.753781"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "700"], ["created_at", "2015-03-19 22:20:51.755347"], ["phone_number", "000-000-0007"], ["restaurant_name", "McDonalds"], ["store_ID", "00003"], ["updated_at", "2015-03-19 22:20:51.755347"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 22:20:51.756873"], ["phone_number", "000-000-0006"], ["restaurant_name", "MacNGrill"], ["store_ID", "00004"], ["updated_at", "2015-03-19 22:20:51.756873"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "500"], ["created_at", "2015-03-19 22:20:51.758348"], ["phone_number", "000-000-0005"], ["restaurant_name", "Olive Garden"], ["store_ID", "00005"], ["updated_at", "2015-03-19 22:20:51.758348"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "600"], ["created_at", "2015-03-19 22:20:51.759652"], ["phone_number", "000-000-0004"], ["restaurant_name", "Red Robin"], ["store_ID", "00006"], ["updated_at", "2015-03-19 22:20:51.759652"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "300"], ["created_at", "2015-03-19 22:20:51.761439"], ["phone_number", "000-000-0003"], ["restaurant_name", "Pita Pit"], ["store_ID", "00007"], ["updated_at", "2015-03-19 22:20:51.761439"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "100"], ["created_at", "2015-03-19 22:20:51.762823"], ["phone_number", "000-000-0002"], ["restaurant_name", "The Blue Star"], ["store_ID", "00008"], ["updated_at", "2015-03-19 22:20:51.762823"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("created_at", "notes", "party_size", "restaurant_ID", "updated_at", "user_ID") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2015-03-19 22:20:51.771497"], ["notes", "test"], ["party_size", 2], ["restaurant_ID", 1], ["updated_at", "2015-03-19 22:20:51.771497"], ["user_ID", 0]]
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReservations (20150319180638)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReservations (20150319180638)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+PG::DuplicateTable: ERROR:  relation "reservations" already exists
+: CREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReservations (20150319180638)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+PG::DuplicateTable: ERROR:  relation "reservations" already exists
+: CREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReservations (20150319180638)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+PG::DuplicateTable: ERROR:  relation "reservations" already exists
+: CREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReservations (20150319180638)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+PG::DuplicateTable: ERROR:  relation "reservations" already exists
+: CREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (103.2ms)[0m  [1mDROP DATABASE IF EXISTS "myapp_test"[0m
+  [1m[35m (274.9ms)[0m  CREATE DATABASE "myapp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (11.3ms)[0m  CREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (6.5ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "restaurant_name" character varying(255), "store_ID" character varying(255), "phone_number" character varying(255), "address" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (4.3ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140319180638')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20111119180638')
+  [1m[36m (103.9ms)[0m  [1mDROP DATABASE IF EXISTS "myapp_test"[0m
+  [1m[35m (278.9ms)[0m  CREATE DATABASE "myapp_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (6.7ms)[0m  CREATE TABLE "reservations" ("id" serial primary key, "restaurant_ID" integer, "reservation_date_time" timestamp, "party_size" integer, "notes" text, "user_ID" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "restaurants" ("id" serial primary key, "restaurant_name" character varying(255), "store_ID" character varying(255), "phone_number" character varying(255), "address" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140319180638')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20111119180638')

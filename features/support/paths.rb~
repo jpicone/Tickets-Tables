@@ -13,8 +13,15 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
-    when /^the (ProjectManager )?home\s?page$/ then '/projects'
-    when /^the projects page$/ then '/projects'
+    when /^the (Tickets&Tables )?home\s?page$/ then '/welcome/home'
+	when /^the (ViewReservation )?home\s?page$/ then '/welcome/viewReservation'
+	when /^the (MyReservations )?home\s?page$/ then '/welcome/reservations'
+	when /^the (ViewRestaurant )?home\s?page$/ then '/welcome/viewRestaurant'
+	when /^the (CreateReservation )?home\s?page$/ then '/welcome/createReservation'
+	when /^the (EditReservations )?home\s?page$/ then '/welcome/createReservation'
+EditReservations
+
+  #  when /^the projects page$/ then '/projects'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

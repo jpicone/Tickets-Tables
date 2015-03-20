@@ -14,6 +14,12 @@ module NavigationHelpers
     case page_name
 
     when /^the (Tickets&Tables )?home\s?page$/ then '/welcome/home'
+	when /^the (ViewReservation )?home\s?page$/ then '/welcome/viewReservation'
+	when /^the (MyReservations )?home\s?page$/ then '/welcome/reservations'
+	when /^the (ViewRestaurant )?home\s?page$/ then '/welcome/viewRestaurant'
+	when /^the (CreateReservation )?home\s?page$/ then '/welcome/createReservation'
+	when /^the (EditReservations )?home\s?page$/ then '/welcome/editReservation'
+
   #  when /^the projects page$/ then '/projects'
 
     # Add more mappings here.
