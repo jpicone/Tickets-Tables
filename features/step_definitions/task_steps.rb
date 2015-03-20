@@ -14,6 +14,13 @@ Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
 	page.body.should =~ regexp
 end
 
+
+When /^I press the (.*?) button$/ do |button|
+ click_button button
+end
+
+
+
 When(/^I press login$/) do
   visit "/welcome/login"
 end

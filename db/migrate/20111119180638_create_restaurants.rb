@@ -5,6 +5,7 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :store_ID
       t.string :phone_number
       t.string :address
+      t.integer:max_occupancy
       # Add fields that let Rails automatically keep track
       # of when project tasks are added or modified:
       t.timestamps

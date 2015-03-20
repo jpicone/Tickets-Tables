@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20140319180638) do
     t.string   "store_ID"
     t.string   "phone_number"
     t.string   "address"
+    t.string   "max_occupancy"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

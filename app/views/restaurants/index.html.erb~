@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<%= link_to 'Restaurant Index', controller: 'restaurants' %>
-	<head>
+<head>
 		<link rel="stylesheet" type="text/css" href="../../assets/application.css" />
 	</head>
-
+	
+	<%= button_to 'New Restaurant', new_restaurant_path %>
 	<body>
 		<table id="restaurants" class="cell-border">  
 			<thead>  
@@ -12,6 +10,7 @@
 				<th>Restaurant Name</th>
 				<th>Address</th>
 				<th>Phone Number</th> 
+				<th>Max Occupancy</th>
 			  </tr>  
 			</thead>  
 			<tbody>
@@ -20,20 +19,11 @@
 				  <td><%= restaurant.restaurant_name %></td>  
 				  <td><%= restaurant.address %></td>  
 				  <td><%= restaurant.phone_number %></td>  
+				  <td><%= restaurant.max_occupancy %></td>  
 				</tr>
 				<% end %>
 			</tbody>  
 		</table>  
-
-		<div class="main-content">
-			<h2>Reservations</h2>
-			<p>
-			 This will one day say a welcome message to visitors
-			</p>
-		</div>
-		
-	</body>
-
 <script>
 	$(document).ready(function(){
 
@@ -41,5 +31,3 @@
 
 	});
 </script>
-
-</html>
