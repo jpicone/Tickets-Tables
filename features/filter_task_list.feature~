@@ -1,0 +1,53 @@
+Feature: display list of tasks filtered by user
+ 
+  As a developer
+  So that I can quickly browse tasks assigned to a user
+  I want to see tasks assigned to certain users
+
+Background: tasks have been added to database
+
+   Given the following restaurants exist:
+  | restaurant_name         | address | phone_number |
+  | Outback Steakhouse      | 900     | 000-000-0009 |
+  | Chipotle      		    | 800     | 000-000-0003 |
+  | McDonalds      			| 700     | 000-000-0007 |
+  | MacNGrill     			| 600     | 000-000-0008 |
+  | Zios   					| 150     | 000-000-0002 |
+  | Olive Garden       		| 500     | 000-000-0001 |
+
+  And I am on the Tickets&Tables home page
+
+#Scenario: restrict to tasks owned by 'Coulson' or 'Skye'
+#	# enter step(s) to check the 'Coulson' and 'Skye' checkboxes
+#	When I select the following users: Coulson, Skye
+#
+#	# enter step(s) to uncheck all other checkboxes
+#	When I unselect the following users: May, Fitz, Ward, Simmons
+#
+#	# enter step to "submit" the search form on the homepage
+#	# Step defined in web_steps.rb
+#	And I press "Refresh"
+#
+#  # enter step(s) to ensure that Coulson's and Skye's tasks are visible
+#	# Steps defined in web_steps.rb
+#	Then I should see "Add User Profile"
+#	And I should see "Create Login Modal"
+#	And I should see "Add Site overview"
+#
+#  # enter step(s) to ensure that other tasks are not visible
+#	# Steps defined in web_steps.rb
+#	And I should not see "Fix header Display"
+#	And I should not see "Add Mobile support"
+#	And I should not see "Get fastload working"
+#	And I should not see "Improve navigation"
+#	And I should not see "Raid cookie jar"
+#	And I should not see "Improve security"
+#	And I should not see "Steal milk"
+#
+#Scenario: all users selected
+#  When I select the following users: May, Fitz, Ward, Simmons, Coulson, Skye
+#
+#	# Step defined in web_steps.rb
+#	And I press "Refresh"
+#
+#	Then I should see all the tasks

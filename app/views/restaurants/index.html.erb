@@ -1,0 +1,33 @@
+<head>
+		<link rel="stylesheet" type="text/css" href="../../assets/application.css" />
+	</head>
+	
+	<%= link_to '<button type="button">New Restaurant</button>'.html_safe, new_restaurant_path%>
+	<body>
+		<table id="restaurants" class="cell-border">  
+			<thead>  
+			  <tr>  
+				<th>Restaurant Name</th>
+				<th>Address</th>
+				<th>Phone Number</th> 
+				<th>Max Occupancy</th>
+			  </tr>  
+			</thead>  
+			<tbody>
+				<% @restaurants.each do |restaurant| %>
+				<tr>  
+				  <td><%= restaurant.restaurant_name %></td>  
+				  <td><%= restaurant.address %></td>  
+				  <td><%= restaurant.phone_number %></td>  
+				  <td><%= restaurant.max_occupancy %></td>  
+				</tr>
+				<% end %>
+			</tbody>  
+		</table>  
+<script>
+	$(document).ready(function(){
+
+    	$('#restaurants').DataTable();
+
+	});
+</script>
