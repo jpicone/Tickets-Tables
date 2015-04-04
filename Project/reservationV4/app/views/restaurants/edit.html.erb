@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../assets/application.css" />
+	</head>
+
+	<body>
+		<div class="main-content ">
+			<h2>Edit Restaurant</h2>
+			<%= form_for(@restaurant, url: "/restaurants/save", method: :post) do |f| %>
+					<div class="editor-field">
+						<%= f.label :restaurant_name, :class => "input-label" %>:
+						<%= f.text_field :restaurant_name %><br />
+					</div>
+					<div class="editor-field">
+						<%= f.label :store_ID, :class => "input-label" %>:
+						<%= f.text_field :store_ID %><br />
+					</div>
+					<div class="editor-field">
+						<%= f.label :address, :class => "input-label" %>:
+						<%= f.text_field :address %><br />
+					</div>
+					<div class="editor-field">
+						<%= f.label :phone_number, :class => "input-label" %>:
+						<%= f.text_field :phone_number %><br />
+					</div>
+					<%= f.hidden_field :id, :value => @restaurant.id %>
+  				<%= f.submit :class => "ui-button", :id => "submit" %>
+					<%= link_to "Cancel", {controller: "restaurants", action: "details", id: @restaurant.id}, class: "ui-button", :id => "back" %>
+			<% end %>
+		</div>
+	</body>
+</html>
