@@ -13,7 +13,11 @@ class RestaurantsController < ApplicationController
 	end
 
 	def confirmDelete
-		Restaurant.find(params[:id]).delete
+		if Restaurant.find(params[:id]).delete
+			flash[:success] = "Restaurant successfully deleted!"
+		else
+			flash[:error] = "There was an error processing your request."
+		end
 		redirect_to :action => "home"
 	end
 
@@ -27,6 +31,7 @@ class RestaurantsController < ApplicationController
 			flash[:success] = "Restaurant Successfully Updated!"
 			redirect_to :action => "home"
 		else
+			flash[:error] = "Invalid Input!"
 			render "edit"
 		end
 	end
@@ -37,13 +42,18 @@ class RestaurantsController < ApplicationController
 
   def new
   	@restaraunt = Restaurant.new(restaurant_params)
-  	@restaraunt.save
-  	redirect_to :action => "home"
+  	if @restaraunt.save
+			flash[:success] = "Restaurant Successfully Created!"
+  		redirect_to :action => "home"
+		else
+			flash[:error] = "Invalid Input!"
+			redirect_to action: "create"
+		end
   end
 
   private
     def restaurant_params
-      params.require(:restaurant).permit(:restaurant_name, :store_ID,:phone_number,:address, :id)
+      params.require(:restaurant).permit(:restaurant_name, :store_ID,:phone_number,:address)
     end
 
 end

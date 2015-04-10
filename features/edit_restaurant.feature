@@ -32,6 +32,51 @@ Scenario: Successfully edit a Restaurant
 	When I press "submit"
 	Then I should see "Add New Restaurant"
 
+Scenario: Unsuccessfully edit a Restaurant with blank name
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with ""
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with "111-555-3333"
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with blank store ID
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with ""
+	And I fill in "restaurant_phone_number" with "111-555-3333"
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with blank phone number
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with ""
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with misformatted phone number
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with "1112223333"
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with blank address
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with "111-222-3333"
+  And I fill in "restaurant_address" with ""
+	When I press "submit"
+	Then I should see "Invalid Input"
+
 Scenario: Cancel editing a restaraunt
 	Given I am on the EditRestaurant home page
 	When I follow "back" 

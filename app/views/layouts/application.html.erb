@@ -15,7 +15,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<% if flash[:notice] %> <%= flash[:notice] %> <% end %>
 <%= yield %>
 
 </body>

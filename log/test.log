@@ -13799,3 +13799,2293 @@ Processing by RestaurantsController#details as HTML
   Rendered restaurants/details.html.erb within layouts/application (1.2ms)
 Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-03 20:43:19 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-04-03 20:43:19 -0600
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-04-03 20:43:19 -0600
+Started GET "/welcome/login" for 127.0.0.1 at 2015-04-03 20:43:20 -0600
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-03 20:43:20 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Started GET "/welcome/signup" for 127.0.0.1 at 2015-04-03 20:43:20 -0600
+Processing by WelcomeController#signup as HTML
+  Rendered welcome/signup.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:21 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (3.8ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 3.8ms)
+Started GET "/assets/dataTables/sort_asc.png" for 127.0.0.1 at 2015-04-03 20:43:21 -0600
+Started GET "/assets/dataTables/sort_both.png" for 127.0.0.1 at 2015-04-03 20:43:21 -0600
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-03 20:43:21 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 24ms (Views: 16.2ms | ActiveRecord: 5.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-03 20:43:21 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-03 20:43:23 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "1234 Road"], ["created_at", "2015-04-04 02:43:23.582925"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-04 02:43:23.582925"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 11ms (ActiveRecord: 1.3ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:23 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.5ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-03 20:43:24 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:24 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.5ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/details/1" for 127.0.0.1 at 2015-04-03 20:43:24 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/details.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-03 20:43:24 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-03 20:43:25 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.6ms)
+Started GET "/restaurants/confirmDelete/1" for 127.0.0.1 at 2015-04-03 20:43:25 -0600
+Processing by RestaurantsController#confirmDelete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSQL (1.6ms)[0m  [1mDELETE FROM "restaurants" WHERE "restaurants"."id" = 1[0m
+Redirected to http://localhost:3000/restaurants/home/1
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+Started GET "/restaurants/home/1" for 127.0.0.1 at 2015-04-03 20:43:25 -0600
+Processing by RestaurantsController#home as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (3.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:26 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-03 20:43:26 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-03 20:43:26 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-03 20:43:28 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "1234 Road"], ["created_at", "2015-04-04 02:43:28.624996"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-04 02:43:28.624996"]]
+  [1m[35m (3.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 6ms (ActiveRecord: 3.3ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:28 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-03 20:43:28 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/details.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-03 20:43:29 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-03 20:43:29 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-03 20:43:31 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "restaurants" SET "address" = $1, "phone_number" = $2, "restaurant_name" = $3, "store_ID" = $4, "updated_at" = $5 WHERE "restaurants"."id" = 2[0m  [["address", "5678 Road"], ["phone_number", "111-555-3333"], ["restaurant_name", "MacNGrill"], ["store_ID", "888"], ["updated_at", "2015-04-04 02:43:31.405052"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 8ms (ActiveRecord: 3.5ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:31 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-03 20:43:31 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-03 20:43:32 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered restaurants/details.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.6ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.6ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 1.6ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"test name", "store_ID"=>"test ID", "address"=>"test address", "phone_number"=>"test phonenumber"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "test address"], ["created_at", "2015-04-04 02:43:56.591451"], ["phone_number", "test phonenumber"], ["restaurant_name", "test name"], ["store_ID", "test ID"], ["updated_at", "2015-04-04 02:43:56.591451"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/restaurants/home
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "2"], ["created_at", "2015-04-04 02:43:56.603348"], ["phone_number", "7199999999"], ["restaurant_name", "Test to destroy"], ["store_ID", "1"], ["updated_at", "2015-04-04 02:43:56.603348"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered restaurants/details.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/delete/2" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/delete.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/confirmDelete/2" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#confirmDelete as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "restaurants" WHERE "restaurants"."id" = 2
+Redirected to http://www.example.com/restaurants/home/2
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+Started GET "/restaurants/home/2" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#home as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "2"], ["created_at", "2015-04-04 02:43:56.632449"], ["phone_number", "7199999999"], ["restaurant_name", "Test to edit"], ["store_ID", "1"], ["updated_at", "2015-04-04 02:43:56.632449"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/restaurants/details/3" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered restaurants/details.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+Started GET "/restaurants/edit/3" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Edited name", "store_ID"=>"1", "address"=>"2", "phone_number"=>"7199999999", "id"=>"3"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "restaurants" SET "restaurant_name" = $1, "updated_at" = $2 WHERE "restaurants"."id" = 3[0m  [["restaurant_name", "Edited name"], ["updated_at", "2015-04-04 02:43:56.653677"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/restaurants/home
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "2"], ["created_at", "2015-04-04 02:43:56.664803"], ["phone_number", "7199999999"], ["restaurant_name", "test name 1"], ["store_ID", "1"], ["updated_at", "2015-04-04 02:43:56.664803"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+Started GET "/restaurants/details/4" for 127.0.0.1 at 2015-04-03 20:43:56 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered restaurants/details.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-10 16:31:54 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-04-10 16:31:54 -0600
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-04-10 16:31:55 -0600
+Started GET "/welcome/login" for 127.0.0.1 at 2015-04-10 16:31:55 -0600
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-10 16:31:55 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started GET "/welcome/signup" for 127.0.0.1 at 2015-04-10 16:31:55 -0600
+Processing by WelcomeController#signup as HTML
+  Rendered welcome/signup.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:32:01 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 27ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:32:01 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:32:02 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (4.7ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:32:02 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:32:02 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+Started GET "/assets/dataTables/sort_both.png" for 127.0.0.1 at 2015-04-10 16:32:02 -0600
+Started GET "/assets/dataTables/sort_asc.png" for 127.0.0.1 at 2015-04-10 16:32:02 -0600
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:02 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:03 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:32:05 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "1234 Road"], ["created_at", "2015-04-10 22:32:05.007390"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-10 22:32:05.007390"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 10ms (ActiveRecord: 3.5ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:32:05 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.5ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:05 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:32:05 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.7ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:06 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:32:07 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:07 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:07 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:32:09 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:09 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:09 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:32:10 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>""}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:10 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:11 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:32:13 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"1112223333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:13 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:13 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:32:15 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:15 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/details/1" for 127.0.0.1 at 2015-04-10 16:32:15 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.3ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 1
+  Rendered restaurants/details.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 1.2ms)
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-10 16:32:16 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-10 16:32:16 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.6ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.6ms)
+Started GET "/restaurants/confirmDelete/1" for 127.0.0.1 at 2015-04-10 16:32:16 -0600
+Processing by RestaurantsController#confirmDelete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (7.8ms)[0m  DELETE FROM "restaurants" WHERE "restaurants"."id" = 1
+Redirected to http://localhost:3000/restaurants/home/1
+Completed 302 Found in 15ms (ActiveRecord: 8.2ms)
+Started GET "/restaurants/home/1" for 127.0.0.1 at 2015-04-10 16:32:16 -0600
+Processing by RestaurantsController#home as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (1.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:32:22 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mReservation Load (0.3ms)[0m  SELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 3ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:32:22 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:32:23 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 2ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:32:23 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:32:23 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:23 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:32:24 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:32:25 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "1234 Road"], ["created_at", "2015-04-10 22:32:25.962053"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-10 22:32:25.962053"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:32:25 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-10 16:32:26 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.3ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 2
+  Rendered restaurants/details.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.9ms)
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:32:26 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (1.0ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:32:26 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 16ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:32:28 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "restaurants" SET "address" = $1, "phone_number" = $2, "restaurant_name" = $3, "store_ID" = $4, "updated_at" = $5 WHERE "restaurants"."id" = 2[0m  [["address", "5678 Road"], ["phone_number", "111-555-3333"], ["restaurant_name", "MacNGrill"], ["store_ID", "888"], ["updated_at", "2015-04-10 22:32:28.661099"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:32:28 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:32:29 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:32:30 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:32:31 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:32:32 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:32:32 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:32:34 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:32:35 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:32:36 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"1112223333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:32:37 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.5ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.5ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:32:38 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"", "phone_number"=>"111-222-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:32:39 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-10 16:32:39 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.3ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 2
+  Rendered restaurants/details.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/details/2" for 127.0.0.1 at 2015-04-10 16:32:39 -0600
+Processing by ReservationsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 3ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-10 16:36:07 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-04-10 16:36:07 -0600
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-04-10 16:36:07 -0600
+Started GET "/welcome/login" for 127.0.0.1 at 2015-04-10 16:36:07 -0600
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-10 16:36:08 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/welcome/signup" for 127.0.0.1 at 2015-04-10 16:36:08 -0600
+Processing by WelcomeController#signup as HTML
+  Rendered welcome/signup.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:36:14 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (50.9ms)
+Completed 500 Internal Server Error in 66ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:36:14 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:36:14 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (1.8ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:36:14 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.8ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:36:15 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+Started GET "/assets/dataTables/sort_both.png" for 127.0.0.1 at 2015-04-10 16:36:15 -0600
+Started GET "/assets/dataTables/sort_asc.png" for 127.0.0.1 at 2015-04-10 16:36:15 -0600
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:15 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:15 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:36:17 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "1234 Road"], ["created_at", "2015-04-10 22:36:17.448518"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-10 22:36:17.448518"]]
+  [1m[35m (11.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 17ms (ActiveRecord: 11.5ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:36:17 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:17 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:36:18 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (2.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:18 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:36:19 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:19 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:20 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:36:21 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:21 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:21 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:36:23 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>""}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:23 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:23 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:36:25 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"1112223333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:25 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:25 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:36:27 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:27 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/details/1" for 127.0.0.1 at 2015-04-10 16:36:27 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.4ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 1
+  Rendered restaurants/details.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.8ms)
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-10 16:36:27 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-10 16:36:28 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/confirmDelete/1" for 127.0.0.1 at 2015-04-10 16:36:28 -0600
+Processing by RestaurantsController#confirmDelete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "restaurants" WHERE "restaurants"."id" = 1
+Redirected to http://localhost:3000/restaurants/home/1
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+Started GET "/restaurants/home/1" for 127.0.0.1 at 2015-04-10 16:36:28 -0600
+Processing by RestaurantsController#home as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:36:34 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mReservation Load (0.3ms)[0m  SELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 3ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:36:34 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:36:34 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:36:34 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 3ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:36:35 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:35 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:36:35 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:36:37 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "1234 Road"], ["created_at", "2015-04-10 22:36:37.357042"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-10 22:36:37.357042"]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 11ms (ActiveRecord: 6.0ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:36:37 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-10 16:36:37 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.4ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 2
+  Rendered restaurants/details.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.8ms)
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:36:37 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:36:38 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:36:39 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "restaurants" SET "address" = $1, "phone_number" = $2, "restaurant_name" = $3, "store_ID" = $4, "updated_at" = $5 WHERE "restaurants"."id" = 2[0m  [["address", "5678 Road"], ["phone_number", "111-555-3333"], ["restaurant_name", "MacNGrill"], ["store_ID", "888"], ["updated_at", "2015-04-10 22:36:39.882299"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:36:39 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:36:40 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:36:41 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:36:42 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (1.1ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 1.1ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:36:43 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (1.7ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:36:44 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:36:45 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:36:46 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.5ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 10ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:36:47 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"1112223333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:36:48 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:36:49 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"", "phone_number"=>"111-222-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:36:50 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-10 16:36:50 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.6ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 2
+  Rendered restaurants/details.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/details/2" for 127.0.0.1 at 2015-04-10 16:36:50 -0600
+Processing by ReservationsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.6ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-10 16:39:54 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-04-10 16:39:54 -0600
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-04-10 16:39:54 -0600
+Started GET "/welcome/login" for 127.0.0.1 at 2015-04-10 16:39:54 -0600
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (3.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-10 16:39:55 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+Started GET "/welcome/signup" for 127.0.0.1 at 2015-04-10 16:39:55 -0600
+Processing by WelcomeController#signup as HTML
+  Rendered welcome/signup.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:40:00 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 23ms
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:40:01 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:40:01 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:40:01 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:40:02 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+Started GET "/assets/dataTables/sort_both.png" for 127.0.0.1 at 2015-04-10 16:40:02 -0600
+Started GET "/assets/dataTables/sort_asc.png" for 127.0.0.1 at 2015-04-10 16:40:02 -0600
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:02 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:02 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:40:04 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "1234 Road"], ["created_at", "2015-04-10 22:40:04.193026"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-10 22:40:04.193026"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:40:04 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:04 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:40:04 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.9ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:05 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:40:06 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:06 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:07 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:40:08 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:08 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:08 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:40:09 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>""}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:10 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:10 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:40:12 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"1112223333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:12 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:12 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:40:13 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:13 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/details/1" for 127.0.0.1 at 2015-04-10 16:40:14 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.5ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 1
+  Rendered restaurants/details.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-10 16:40:14 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (1.0ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-10 16:40:14 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+Started GET "/restaurants/confirmDelete/1" for 127.0.0.1 at 2015-04-10 16:40:15 -0600
+Processing by RestaurantsController#confirmDelete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (6.8ms)[0m  DELETE FROM "restaurants" WHERE "restaurants"."id" = 1
+Redirected to http://localhost:3000/restaurants/home/1
+Completed 302 Found in 10ms (ActiveRecord: 7.2ms)
+Started GET "/restaurants/home/1" for 127.0.0.1 at 2015-04-10 16:40:15 -0600
+Processing by RestaurantsController#home as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:40:20 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:40:21 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (5.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:40:21 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mReservation Load (0.3ms)[0m  SELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:40:21 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:40:21 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:22 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:40:22 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:40:23 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "1234 Road"], ["created_at", "2015-04-10 22:40:23.980688"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-10 22:40:23.980688"]]
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 8ms (ActiveRecord: 4.5ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:40:24 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-10 16:40:24 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.6ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 2
+  Rendered restaurants/details.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.8ms)
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:40:24 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:40:24 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:40:26 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "restaurants" SET "address" = $1, "phone_number" = $2, "restaurant_name" = $3, "store_ID" = $4, "updated_at" = $5 WHERE "restaurants"."id" = 2[0m  [["address", "5678 Road"], ["phone_number", "111-555-3333"], ["restaurant_name", "MacNGrill"], ["store_ID", "888"], ["updated_at", "2015-04-10 22:40:26.459620"]]
+  [1m[35m (9.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 19ms (ActiveRecord: 9.9ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:40:26 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:40:26 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:40:28 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:40:29 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:40:30 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (1.1ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:40:30 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.5ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:40:32 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:40:32 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.6ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:40:34 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"1112223333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:40:35 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:40:36 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"", "phone_number"=>"111-222-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:40:37 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.5ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-10 16:40:37 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.4ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 2
+  Rendered restaurants/details.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/details/2" for 127.0.0.1 at 2015-04-10 16:40:42 -0600
+Processing by ReservationsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-10 16:44:26 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-04-10 16:44:26 -0600
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-04-10 16:44:26 -0600
+Started GET "/welcome/login" for 127.0.0.1 at 2015-04-10 16:44:26 -0600
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/welcome/home" for 127.0.0.1 at 2015-04-10 16:44:27 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+Started GET "/welcome/signup" for 127.0.0.1 at 2015-04-10 16:44:27 -0600
+Processing by WelcomeController#signup as HTML
+  Rendered welcome/signup.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:44:32 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 24ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:44:32 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (3.5ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 9ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:44:33 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/create/2" for 127.0.0.1 at 2015-04-10 16:44:33 -0600
+Processing by ReservationsController#create as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered reservations/create.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:44:33 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+Started GET "/assets/dataTables/sort_both.png" for 127.0.0.1 at 2015-04-10 16:44:33 -0600
+Started GET "/assets/dataTables/sort_asc.png" for 127.0.0.1 at 2015-04-10 16:44:33 -0600
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:34 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:34 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:44:36 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["address", "1234 Road"], ["created_at", "2015-04-10 22:44:36.315543"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-10 22:44:36.315543"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:44:36 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:36 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:44:37 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:37 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:44:38 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:38 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:39 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:44:40 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:40 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:40 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:44:42 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>""}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:42 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (1.8ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:42 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:44:44 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"1112223333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:44 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:44 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:44:46 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/restaurants/create
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:46 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/details/1" for 127.0.0.1 at 2015-04-10 16:44:51 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.5ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 1
+  Rendered restaurants/details.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.7ms)
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-10 16:44:52 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/delete/1" for 127.0.0.1 at 2015-04-10 16:44:52 -0600
+Processing by RestaurantsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered restaurants/delete.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+Started GET "/restaurants/confirmDelete/1" for 127.0.0.1 at 2015-04-10 16:44:52 -0600
+Processing by RestaurantsController#confirmDelete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (3.3ms)[0m  DELETE FROM "restaurants" WHERE "restaurants"."id" = 1
+Redirected to http://localhost:3000/restaurants/home/1
+Completed 302 Found in 7ms (ActiveRecord: 3.5ms)
+Started GET "/restaurants/home/1" for 127.0.0.1 at 2015-04-10 16:44:52 -0600
+Processing by RestaurantsController#home as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:44:58 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mReservation Load (0.2ms)[0m  SELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:44:58 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:44:58 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mReservation Load (0.1ms)[0m  SELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/edit/2" for 127.0.0.1 at 2015-04-10 16:44:59 -0600
+Processing by ReservationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:44:59 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:44:59 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/restaurants/create" for 127.0.0.1 at 2015-04-10 16:45:00 -0600
+Processing by RestaurantsController#create as HTML
+  Rendered restaurants/create.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+Started POST "/restaurants/new" for 127.0.0.1 at 2015-04-10 16:45:01 -0600
+Processing by RestaurantsController#new as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"Outback", "store_ID"=>"999", "address"=>"1234 Road", "phone_number"=>"111-222-3333"}, "commit"=>"Create Restaurant"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "restaurants" ("address", "created_at", "phone_number", "restaurant_name", "store_ID", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["address", "1234 Road"], ["created_at", "2015-04-10 22:45:01.602657"], ["phone_number", "111-222-3333"], ["restaurant_name", "Outback"], ["store_ID", "999"], ["updated_at", "2015-04-10 22:45:01.602657"]]
+  [1m[36m (8.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 11ms (ActiveRecord: 8.2ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:45:01 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-10 16:45:01 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.3ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 2
+  Rendered restaurants/details.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:45:02 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (1.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 1.1ms)
+  [1m[35m (1.1ms)[0m  ROLLBACK
+  [1m[36m (3.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:45:02 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:45:04 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "restaurants" SET "address" = $1, "phone_number" = $2, "restaurant_name" = $3, "store_ID" = $4, "updated_at" = $5 WHERE "restaurants"."id" = 2[0m  [["address", "5678 Road"], ["phone_number", "111-555-3333"], ["restaurant_name", "MacNGrill"], ["store_ID", "888"], ["updated_at", "2015-04-10 22:45:04.278504"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurants/home
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+Started GET "/restaurants/home" for 127.0.0.1 at 2015-04-10 16:45:04 -0600
+Processing by RestaurantsController#home as HTML
+  [1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:45:04 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (2.7ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 12ms (Views: 5.9ms | ActiveRecord: 2.7ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:45:06 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (4.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:45:06 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:45:08 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"", "address"=>"5678 Road", "phone_number"=>"111-555-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:45:08 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:45:10 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (2.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:45:10 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:45:12 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"5678 Road", "phone_number"=>"1112223333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:45:12 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+Started POST "/restaurants/save" for 127.0.0.1 at 2015-04-10 16:45:14 -0600
+Processing by RestaurantsController#save as HTML
+  Parameters: {"utf8"=>"✓", "restaurant"=>{"restaurant_name"=>"MacNGrill", "store_ID"=>"888", "address"=>"", "phone_number"=>"111-222-3333", "id"=>"2"}, "commit"=>"Update Restaurant"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: id
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered restaurants/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/restaurants/edit/2" for 127.0.0.1 at 2015-04-10 16:45:14 -0600
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered restaurants/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+Started GET "/restaurants/details/2" for 127.0.0.1 at 2015-04-10 16:45:14 -0600
+Processing by RestaurantsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants"  WHERE "restaurants"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mReservation Load (0.4ms)[0m  SELECT "reservations".* FROM "reservations"  WHERE "reservations"."restaurant_ID" = 2
+  Rendered restaurants/details.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (4.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/reservations/details/2" for 127.0.0.1 at 2015-04-10 16:45:20 -0600
+Processing by ReservationsController#details as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT  "reservations".* FROM "reservations"  WHERE "reservations"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 1ms
+  [1m[35m (0.1ms)[0m  ROLLBACK

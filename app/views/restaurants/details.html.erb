@@ -7,34 +7,80 @@
 
 	<body>
 		<div class="main-content ">
-		<h2>Details:</h2>
-			<div class="display-field">
-				<%=label_tag 'restaurant_name', "Restaurant Name: ", class: "short-label" %>
+			<div class="details-container" style="width: 400px">
+				<h2 style="display: inline-block">Restaurant Details:</h2>
+				<div class="details">
+						<div class="display-field">
+							<%=label_tag 'restaurant_name', "Restaurant Name: ", class: "short-label" %>
+						</div>
+						<div class="input-label">
+							<%=label_tag @restaurant.restaurant_name, nil, id: 'restaurant_name' %>
+						</div></br>
+						<div class="display-field">
+							<%=label_tag 'store_ID', "Store ID: ", class: "short-label" %>
+						</div>
+						<div class="input-label">
+							<%=label_tag @restaurant.store_ID, nil, id: 'store_ID' %>
+						</div></br>
+						<div class="display-field">
+							<%=label_tag 'address', "Address: ", class: "short-label" %>
+						</div>
+						<div class="input-label">
+							<%=label_tag @restaurant.address, nil, id: 'address' %>
+						</div></br>
+						<div class="display-field">
+							<%=label_tag 'phone_number', "Phone Number: ", class: "short-label" %>
+						</div>
+						<div class="input-label">
+							<%=label_tag @restaurant.phone_number, nil, id: 'phone_number' %>
+						</div></br></hr>	
+						<%= link_to "Back to List", {controller: "restaurants", action: "home"}, :class => "ui-button", :id => "back"  %>
+						<%= link_to "Edit", {controller: "restaurants", action: "edit", id: @restaurant.id}, :class => "ui-button", :id => "edit"  %>
+						<%= link_to "Delete", {controller: "restaurants", action: "delete", id: @restaurant.id}, :class => "ui-button", :id => "delete" %>
+				</div>
 			</div>
-			<div class="input-label">
-				<%=label_tag @restaurant.restaurant_name, nil, id: 'restaurant_name' %>
-			</div></br>
-			<div class="display-field">
-				<%=label_tag 'store_ID', "Store ID: ", class: "short-label" %>
-			</div>
-			<div class="input-label">
-				<%=label_tag @restaurant.store_ID, nil, id: 'store_ID' %>
-			</div></br>
-			<div class="display-field">
-				<%=label_tag 'address', "Address: ", class: "short-label" %>
-			</div>
-			<div class="input-label">
-				<%=label_tag @restaurant.address, nil, id: 'address' %>
-			</div></br>
-			<div class="display-field">
-				<%=label_tag 'phone_number', "Phone Number: ", class: "short-label" %>
-			</div>
-			<div class="input-label">
-				<%=label_tag @restaurant.phone_number, nil, id: 'phone_number' %>
-			</div></br></hr>	
-			<%= link_to "Back to List", {controller: "restaurants", action: "home"}, :class => "ui-button", :id => "back"  %>
-			<%= link_to "Edit", {controller: "restaurants", action: "edit", id: @restaurant.id}, :class => "ui-button", :id => "edit"  %>
-			<%= link_to "Delete", {controller: "restaurants", action: "delete", id: @restaurant.id}, :class => "ui-button", :id => "delete" %>
+			<hr>
+			<div class="details-container" style="width: 950px">
+				<%= link_to "Add Reservation", {controller: "reservations", action: "create", id: @restaurant.id}, :class => "ui-button", :id => "add"  %>
+				<div id="success" class="success">
+					<% if flash[:success] %> <%= flash[:success] %> <% end %>
+				</div>
+				<div id="error" class="error">
+					<% if flash[:error] %> <%= flash[:error] %> <% end %>
+				</div>
+				<div class="reservations">
+					<table id="reservations" class="cell-border dataTable">  
+						<thead>  
+							<tr>  
+							<th>Customer Name</th>
+							<th>Reservation Time</th>
+							<th>Party Size</th> 
+							<th>Notes</th>
+							</tr>  
+						</thead>  
+						<tbody>
+							<% @reservations = Reservation.where(restaurant_ID: @restaurant.id) %>
+							<% @reservations.each do |reservation| %>
+							<tr>  
+								<td><%= link_to @restaurant.restaurant_name, :controller => :reservations, :action	=> :details, :id => reservation.id %></td>  
+								<td><%= reservation.reservation_date_time %></td>  
+								<td><%= reservation.party_size %></td> 
+								<td><%= reservation.notes %></td>  
+							</tr>
+							<% end %>
+						</tbody>  
+					</table>
+				</div>
+			</div>				
 		</div>
 	</body>
+
+	<script>
+		$(document).ready(function(){
+
+		  	$('.dataTable').DataTable();
+
+		});
+	</script>
+
 </html>

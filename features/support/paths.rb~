@@ -14,16 +14,17 @@ module NavigationHelpers
     case page_name
 
   when /^the (Tickets&Tables )?home\s?page$/ then '/welcome/home'
-	when /^the (ViewReservation )?home\s?page$/ then '/welcome/viewReservation'
+	when /^the (ViewReservation )?home\s?page$/ then '/reservations/details/2'
 	when /^the (MyReservations )?home\s?page$/ then '/welcome/reservations'
 	when /^the (Restaurants )?home\s?page$/ then '/restaurants/home'
 	when /^the (CreateRestaurant )?home\s?page$/ then '/restaurants/create'
 	when /^the (ViewRestaurant )?home\s?page$/ then '/restaurants/details/1'
-	when /^the (EditRestaurant )?home\s?page$/ then '/restaurants/edit/1'
+  when /^the (ViewRestaurant2 )?home\s?page$/ then '/restaurants/details/2'
+	when /^the (EditRestaurant )?home\s?page$/ then '/restaurants/edit/2'
 	when /^the (ConfirmDelete )?home\s?page$/ then '/restaurants/delete/1'
-	when /^the (ViewRestaurant )?home\s?page$/ then '/welcome/viewRestaurant'
-	when /^the (CreateReservation )?home\s?page$/ then '/welcome/createReservation'
-	when /^the (EditReservations )?home\s?page$/ then '/welcome/editReservation'
+	when /^the (CreateReservation )?home\s?page$/ then '/reservations/create/2'
+	when /^the (EditReservation )?home\s?page$/ then '/reservations/edit/2'
+	when /^the (InvalidEditReservation )?home\s?page$/ then '/reservations/save'
 
   #  when /^the projects page$/ then '/projects'
 

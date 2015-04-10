@@ -8,6 +8,9 @@
 	<body>
 		<div class="main-content ">
 			<h2>Create New Restaurant</h2>
+			<div id="error" class="error">
+				<% if flash[:error] %> <%= flash[:error] %> <% end %>
+			<div>
 			<%= form_for(@restaurant, url: "/restaurants/new") do |f| %>
 					<div class="editor-field">
 				  <%= f.label :restaurant_name, :class => "input-label" %>:
@@ -26,7 +29,7 @@
 						<%= f.text_field :phone_number %><br />
 					</div>
   				<%= f.submit :class => "ui-button", :id => "submit" %>
-					<%= link_to "Cancel", {controller: "restaurants", action: "home"}, class: "ui-button" %>
+					<%= link_to "Cancel", {controller: "restaurants", action: "home"}, class: "ui-button", :id => "back" %>
 			<% end %>
 			
 		</div>

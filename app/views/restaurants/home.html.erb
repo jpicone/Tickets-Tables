@@ -6,6 +6,9 @@
 
 <body>
  <%= link_to "Add New Restaurant", {controller: "restaurants", action: "create"}, :class => "ui-button", :id => "add"%>
+			<div id="success" class="success">
+				<% if flash[:success] %> <%= flash[:success] %> <% end %>
+			</div>
 		<table id="restaurants" class="cell-border dataTable">  
 			<thead>  
 			  <tr>  

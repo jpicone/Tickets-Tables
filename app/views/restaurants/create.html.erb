@@ -8,6 +8,9 @@
 	<body>
 		<div class="main-content ">
 			<h2>Create New Restaurant</h2>
+			<div id="error" class="error">
+				<% if flash[:error] %> <%= flash[:error] %> <% end %>
+			</div>
 			<%= form_for(@restaurant, url: "/restaurants/new") do |f| %>
 					<div class="editor-field">
 				  <%= f.label :restaurant_name, :class => "input-label" %>:

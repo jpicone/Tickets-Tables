@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../assets/application.css" />
+	</head>
+
+	<body>
+		<div class="main-content ">
+		<h2>Reservation Details:</h2>
+				<div id="success" class="success">
+					<% if flash[:success] %> <%= flash[:success] %> <% end %>
+				</div>
+				<div class="details">
+					<div class="display-field">
+						<%=label_tag 'restaurant_name', "Restaurant Name: ", class: "short-label" %>
+					</div>
+					<div class="input-label">
+						<% @restaurant = Restaurant.find(@reservation.restaurant_ID) %>
+						<%=label_tag @restaurant.restaurant_name, nil, id: 'restaurant_name' %>
+					</div></br>
+					<div class="display-field">
+						<%=label_tag 'reservation_date_time', "Reservation Time: ", class: "short-label" %>
+					</div>
+					<div class="input-label">
+						<%=label_tag @reservation.reservation_date_time, nil, id: 'reservation_date_time' %>
+					</div></br>
+					<div class="display-field">
+						<%=label_tag 'party_size', "Party Size: ", class: "short-label" %>
+					</div>
+					<div class="input-label">
+						<%=label_tag @reservation.party_size, nil, id: 'party_size' %>
+					</div></br>
+					<div class="display-field">
+						<%=label_tag 'notes', "Notes: ", class: "short-label" %>
+					</div>
+					<div class="input-label">
+						<%=label_tag @reservation.notes, nil, id: 'notes' %>
+					</div></br></hr>	
+					<%= link_to "Back to Restaurant", {controller: "restaurants", action: "details", id: @restaurant.id}, :class => "ui-button", :id => "back"  %>
+					<%= link_to "Edit", {controller: "reservations", action: "edit", id: @reservation.id}, :class => "ui-button", :id => "edit"  %>
+					<%= link_to "Delete", {controller: "reservations", action: "delete", id: @reservation.id}, :class => "ui-button", :id => "delete" %>
+				</div>
+		</div>
+	</body>
+</html>

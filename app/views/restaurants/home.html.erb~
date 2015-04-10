@@ -5,7 +5,10 @@
  	</head>
 
 <body>
- <%= link_to "Add New Restaurant", {controller: "restaurants", action: "create"}, :class => "ui-button" %>
+ <%= link_to "Add New Restaurant", {controller: "restaurants", action: "create"}, :class => "ui-button", :id => "add"%>
+			<div id="notice" class="notice">
+				<% if flash[:notice] %> <%= flash[:notice] %> <% end %>
+			</div>
 		<table id="restaurants" class="cell-border dataTable">  
 			<thead>  
 			  <tr>  

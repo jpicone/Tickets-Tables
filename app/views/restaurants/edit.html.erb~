@@ -26,7 +26,7 @@
 						<%= f.text_field :phone_number %><br />
 					</div>
 					<%= f.hidden_field :id, :value => @restaurant.id %>
-  				<%= f.submit :class => "ui-button", :id => "update_restaurant" %>
+  				<%= f.submit :class => "ui-button", :id => "submit" %>
 					<%= link_to "Cancel", {controller: "restaurants", action: "details", id: @restaurant.id}, class: "ui-button", :id => "back" %>
 			<% end %>
 		</div>

@@ -13,6 +13,11 @@ header {
     text-align:center;
     padding:5px;
 }
+
+hr {
+	margin-top:10px;
+}
+
 nav {
     line-height:30px;
     background-color: #ccc;
@@ -71,12 +76,22 @@ form label {
 	display:inline-block;
 	min-width: 170px;
 }
+.long-input-label{
+	display:inline-block;
+	min-width: 200px;
+}
 .display-field{
 	padding: 5px 0px 5px 0px;
 	color: black;
 	display: inline-block;
 	font-weight: bold;
 	min-width: 170px;
+}
+.long-editor-field{
+	padding: 5px 0px 5px 0px;
+	color: black;
+	font-weight: bold;
+	min-width: 200px;
 }
 a {
 	text-decoration:none;
@@ -109,7 +124,7 @@ a {
 	border-radius: 6px;
 	padding: 5px;
 	vertical-align: middle;
-	border: solid 2px gray;
+	border: solid 1px gray;
 	font-size: 13px;
 	color: #990000;
 	cursor: pointer;
@@ -120,3 +135,46 @@ li {
 	text-decoration:none;
 	display: inline-block;
 }
+
+.restaurant-info {
+	display:inline-flex;
+}
+
+.details{
+	display:inline-block;
+	padding-top: 5px;
+}
+
+.details-container {
+	margin-top: 30px;
+}
+
+.dataTables_wrapper {
+	margin-left: 0;
+}
+
+.reservations{
+	display:inline-block;
+}
+.error {
+	width: 360px;
+	text-align: right;
+	color: red;
+	font-weight: bold;
+	font-size: 12pt;
+	/*padding-left: 223px;*/
+}
+
+.success {
+	margin: 5px 0px 5px 10px;
+	color: green;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.field_with_errors {
+	display: inline-block;
+}
+	.field_with_errors input {
+		border: 1px solid red;
+	}
