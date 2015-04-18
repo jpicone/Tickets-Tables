@@ -10,7 +10,7 @@ feature 'Showing Restaurants details' do
   
   expect(page).to have_content("test name 1")
   click_link "test name 1"
-  expect(page.current_url).to eql('http://www.example.com/restaurants/details?id=4')
+  expect(page.current_url).to eql('http://www.example.com/restaurants/details/17')
   end
 end
 

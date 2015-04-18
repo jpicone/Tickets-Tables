@@ -14,7 +14,8 @@ module NavigationHelpers
     case page_name
 
   when /^the (Tickets&Tables )?home\s?page$/ then '/welcome/home'
-	when /^the (ViewReservation )?home\s?page$/ then '/reservations/details/2'
+	when /^the (ViewReservation )?home\s?page$/ then '/reservations/details/1'
+	when /^the (ViewReservation2 )?home\s?page$/ then '/reservations/details/2'
 	when /^the (MyReservations )?home\s?page$/ then '/welcome/reservations'
 	when /^the (Restaurants )?home\s?page$/ then '/restaurants/home'
 	when /^the (CreateRestaurant )?home\s?page$/ then '/restaurants/create'
@@ -22,8 +23,10 @@ module NavigationHelpers
   when /^the (ViewRestaurant2 )?home\s?page$/ then '/restaurants/details/2'
 	when /^the (EditRestaurant )?home\s?page$/ then '/restaurants/edit/2'
 	when /^the (ConfirmDelete )?home\s?page$/ then '/restaurants/delete/1'
+	when /^the (ConfirmDeleteReservation )?home\s?page$/ then '/reservations/delete/1'
 	when /^the (CreateReservation )?home\s?page$/ then '/reservations/create/2'
-	when /^the (EditReservation )?home\s?page$/ then '/reservations/edit/2'
+	when /^the (EditReservation )?home\s?page$/ then '/reservations/edit/1'
+	when /^the (EditReservation2 )?home\s?page$/ then '/reservations/edit/2'
 	when /^the (InvalidEditReservation )?home\s?page$/ then '/reservations/save'
 	when /^the (InvalidEditRestaurant )?home\s?page$/ then '/restaurants/save'
 

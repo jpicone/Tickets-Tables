@@ -3,10 +3,22 @@
 <header>
 	<ul class="nav-bar">
 		<li><a href="/welcome/home" id="home" name="home" class="nav-button">Home</a></li>
-		<li><a href="/welcome/login" id="login" name="login" class="nav-button">Login</a></li>
+
+<!-- login logout buttons-->
+		<% if current_user %>
+			<li><a href="<%= logout_path %>" id="logout" name="logout" class="nav-button">Log Out</a></li>
+		<% else %>
+ 			<li><a href="<%= signup_path %>" id="signup" name="signup" class="nav-button">Sign up</a></li>
+  			<li><a href="<%= login_path %>" id="login" name="login" class="nav-button">Log In</a></li>
+		<% end %>
+<!-- -->
+
         <li><a href="/restaurants/home" id="restaurants" name="restaurants" class="nav-button">Restaurants</a></li>
 	</ul>	
-	<img src="/images/logo.png">	
+	<img src="/images/logo.png">
+        <% if current_user %>
+           Logged in as <%= current_user.email %> Role: <%= current_user.role %>.
+        <% end %>	
 </header>
 <head>
   <title>Reservation</title>

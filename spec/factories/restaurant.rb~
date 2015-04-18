@@ -1,0 +1,15 @@
+FactoryGirl.define do
+	factory :restaurant do
+		restaurant_name 'Name'
+		store_ID '1'
+		phone_number '719-999-9999'
+		address '2'
+	end
+        factory :restaurant do
+          restaurant_ID '1'
+          party_size '3'
+          notes 'first reservation'
+          user_ID '1'
+	end
+end
+

@@ -23,7 +23,8 @@ group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'factory_girl_rails','~> 4.2.1'
-	gem 'simplecov', :require => false, :group => :test
+  gem 'simplecov', :require => false, :group => :test
+  gem 'rspec-activemodel-mocks', '~> 1.0.1'
 end
 
 group :production do
@@ -48,6 +49,7 @@ gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 gem 'haml'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'bcrypt-ruby', '3.1.2' ## added 3.1 login logout
 
 # Deploy with Capistrano
 # gem 'capistrano'

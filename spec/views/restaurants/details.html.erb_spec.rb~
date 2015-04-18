@@ -1,0 +1,14 @@
+require "spec_helper"
+require "rails_helper"
+describe "restaurants/details.html.erb" do
+  it "displays the restaurants" do
+    assign(:restaurant, [
+      stub_model(Restaurant, :restaurant_name => "test name 1", ),
+ 
+    ])
+    render
+    rendered.should match("test name 1")
+
+  end
+
+end

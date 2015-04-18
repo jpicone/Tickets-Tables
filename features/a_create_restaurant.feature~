@@ -5,7 +5,17 @@ Feature: Create a restaurant
   I want to be able to create my restaurant for customers to make reservations
 
 Background: And I am on the restaurants page
- 
+
+
+  Given the following restaurants exist:
+  | restaurant_name         | address | phone_number | store_ID |
+  | Outback Steakhouse      | 900     | 000-000-0009 | 00001    |
+  | Chipotle      		      | 800     | 000-000-0003 | 00002    |
+  | MacNGrill     			    | 600     | 000-000-0008 | 00006    |
+  | McDonalds      			    | 700     | 000-000-0007 | 00009    |
+  | Zios   					        | 150     | 000-000-0002 | 00008    |
+  | Olive Garden       		  | 500     | 000-000-0001 | 00003    | 
+
 Scenario: Should be able to create a new restaurant
 	Given I am on the Restaurants home page	
 	When I follow "add" 
