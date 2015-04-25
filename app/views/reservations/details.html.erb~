@@ -13,6 +13,13 @@
 				</div>
 				<div class="details">
 					<div class="display-field">
+						<%=label_tag 'user_name', "Customer Name: ", class: "short-label" %>
+					</div>
+					<div class="input-label">
+						<% @user = User.where(id: @reservation.user_ID).first %>
+						<%=label_tag @user.last_name + ", " + @user.first_name, nil, id: 'user_name' %>
+					</div></br>
+					<div class="display-field">
 						<%=label_tag 'restaurant_name', "Restaurant Name: ", class: "short-label" %>
 					</div>
 					<div class="input-label">

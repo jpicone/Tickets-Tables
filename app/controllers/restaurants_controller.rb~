@@ -14,7 +14,7 @@ class RestaurantsController < ApplicationController
 
 	def confirmDelete
 		if Restaurant.find(params[:id]).delete
-			flash[:success] = "Reservation successfully deleted!"
+			flash[:success] = "Restaurant successfully deleted!"
 		else
 			flash[:error] = "There was an error processing your request."
 		end

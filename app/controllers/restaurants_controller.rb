@@ -1,3 +1,4 @@
+#This is the restaurants controller source code.
 class RestaurantsController < ApplicationController
 
   def home

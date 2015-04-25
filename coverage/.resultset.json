@@ -1,23 +1,24 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/helpers/application_helper.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/helpers/sessions_helper.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/helpers/users_helper.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/helpers/welcome_helper.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/controllers/reservations_controller.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/reservations_controller.rb": [
+        null,
         1,
         null,
         1,
@@ -76,22 +77,21 @@
         null,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/controllers/application_controller.rb": [
-        1,
-        null,
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/application_controller.rb": [
         null,
         1,
         null,
         null,
-        null,
-        null,
+        1,
         null,
         1,
         1,
+        null,
+        88,
         88,
         null,
-        1,
         null,
+        1,
         1,
         0,
         null,
@@ -99,7 +99,8 @@
         null,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/controllers/restaurants_controller.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/restaurants_controller.rb": [
+        null,
         1,
         null,
         1,
@@ -160,7 +161,8 @@
         null,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/models/reservation.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/models/reservation.rb": [
+        null,
         1,
         1,
         1,
@@ -168,7 +170,8 @@
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/models/restaurant.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/models/restaurant.rb": [
+        null,
         1,
         1,
         1,
@@ -177,49 +180,48 @@
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/models/user.rb": [
-        1,
-        null,
-        1,
-        1,
+      "/home/saasbook/CS3300/Project/reservationV4/app/models/user.rb": [
         null,
         1,
         1,
         1,
-        1,
-        1,
-        1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null
       ]
     },
-    "timestamp": 1429317836
+    "timestamp": 1429937637
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/controllers/welcome_controller.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/welcome_controller.rb": [
+        null,
         1,
         1,
-        2,
+        5,
         null,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/controllers/application_controller.rb": [
-        1,
-        null,
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/application_controller.rb": [
         null,
         1,
         null,
         null,
-        null,
-        null,
+        1,
         null,
         1,
         1,
-        156,
+        null,
+        196,
+        196,
+        null,
         null,
         1,
-        null,
         1,
         0,
         null,
@@ -227,23 +229,24 @@
         null,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/helpers/application_helper.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/helpers/sessions_helper.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/helpers/users_helper.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/helpers/welcome_helper.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/models/restaurant.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/models/restaurant.rb": [
+        null,
         1,
         1,
         1,
@@ -252,7 +255,78 @@
         1,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/controllers/restaurants_controller.rb": [
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/users_controller.rb": [
+        null,
+        1,
+        1,
+        9,
+        null,
+        null,
+        1,
+        8,
+        8,
+        2,
+        2,
+        null,
+        6,
+        null,
+        null,
+        null,
+        1,
+        1,
+        8,
+        null,
+        null,
+        null
+      ],
+      "/home/saasbook/CS3300/Project/reservationV4/app/models/user.rb": [
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/saasbook/CS3300/Project/reservationV4/app/models/reservation.rb": [
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/sessions_controller.rb": [
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/restaurants_controller.rb": [
+        null,
         1,
         null,
         1,
@@ -260,7 +334,7 @@
         null,
         null,
         1,
-        14,
+        9,
         null,
         null,
         1,
@@ -313,15 +387,8 @@
         null,
         null
       ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/models/reservation.rb": [
-        1,
-        1,
-        1,
+      "/home/saasbook/CS3300/Project/reservationV4/app/controllers/reservations_controller.rb": [
         null,
-        1,
-        null
-      ],
-      "/home/saasbook/CS3300/Project/Schorsch/reservationV4/app/controllers/reservations_controller.rb": [
         1,
         null,
         1,
@@ -344,43 +411,43 @@
         null,
         null,
         1,
+        5,
+        null,
+        null,
+        1,
         4,
-        null,
-        null,
+        4,
         1,
+        1,
+        null,
         3,
         3,
-        1,
-        1,
-        null,
-        2,
-        2,
         null,
         null,
         null,
         1,
-        7,
+        9,
         null,
         null,
         1,
+        4,
+        4,
+        1,
+        1,
+        null,
         3,
         3,
-        1,
-        1,
-        null,
-        2,
-        2,
         null,
         null,
         null,
         1,
         1,
-        6,
+        8,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1429317937
+    "timestamp": 1429940252
   }
 }

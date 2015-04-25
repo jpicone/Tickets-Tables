@@ -1,3 +1,4 @@
+#This is the restaurant model source code.
 class Restaurant < ActiveRecord::Base
 	validates :restaurant_name, presence: true
 	validates :store_ID, presence: true

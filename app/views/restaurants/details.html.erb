@@ -61,8 +61,16 @@
 						<tbody>
 							<% @reservations = Reservation.where(restaurant_ID: @restaurant.id) %>
 							<% @reservations.each do |reservation| %>
+							<% @user = User.where(id: reservation.user_ID).first %>
+							
 							<tr>  
-								<td><%= link_to @restaurant.restaurant_name, :controller => :reservations, :action	=> :details, :id => reservation.id %></td>  
+								<td>
+										<% if session[:user_id] != nil %>
+											<%= link_to @user.last_name, :controller => :reservations, :action	=> :details, :id => reservation.id %>
+										<% else %>
+											<%= link_to @restaurant.restaurant_name, :controller => :reservations, :action	=> :details, :id => reservation.id %>
+										<% end %>
+								</td>  
 								<td><%= reservation.reservation_date_time %></td>  
 								<td><%= reservation.party_size %></td> 
 								<td><%= reservation.notes %></td>  

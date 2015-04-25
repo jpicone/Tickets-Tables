@@ -1,3 +1,4 @@
+#This is the reservations controller source code.
 class ReservationsController < ApplicationController
 
   def details
@@ -11,7 +12,7 @@ class ReservationsController < ApplicationController
 	def confirmDelete
 		@reservation = Reservation.find(params[:id])
 		@restaurant = Restaurant.find(@reservation.restaurant_ID)
-		if Reservation.find(params[:id]).delete
+		if Reservation.find(@reservation.id).delete
 			flash[:success] = "Reservation successfully deleted!"
 		else
 			flash[:error] = "There was an error processing your request."
@@ -26,7 +27,7 @@ class ReservationsController < ApplicationController
 	def save
 		@reservation = Reservation.find(params[:reservation][:id])
 		if @reservation.update_attributes(reservation_params)
-			flash[:success] = "Restaurant Successfully Updated!"
+			flash[:success] = "Reservation Successfully Updated!"
 			redirect_to :action => "details", :id => @reservation.id
 		else
 			flash[:error] = "Invalid Input!"

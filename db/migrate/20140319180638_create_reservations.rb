@@ -1,14 +1,15 @@
+#Migratation source code for Reservations
 class CreateReservations < ActiveRecord::Migration
   def up
-    create_table :reservations do |t|
-      t.integer :restaurant_ID
-      t.datetime :reservation_date_time
-      t.integer :party_size
-      t.text :notes
-      t.integer :user_ID
+    create_table :reservations do |column|
+      column.integer :restaurant_ID
+      column.datetime :reservation_date_time
+      column.integer :party_size
+      column.text :notes
+      column.integer :user_ID
       # Add fields that let Rails automatically keep track
       # of when project tasks are added or modified:
-      t.timestamps
+      column.timestamps
     end
   end
 

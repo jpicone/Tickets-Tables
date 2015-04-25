@@ -1,3 +1,4 @@
+#This is the reservations model source code.
 class Reservation < ActiveRecord::Base
 	validates :reservation_date_time, presence: true
 	validates :party_size, presence: true

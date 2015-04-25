@@ -9,8 +9,8 @@ Background: I should be on the Restaurants home page
  
 Scenario: Should be able to view a reservation
 	Given I am on the ViewRestaurant2 home page
-	And I follow "MacNGrill" 
-	And I should see "MacNGrill"	
+	And I follow "Anonymous" 
+	And I should see "Macngrill"	
 	And I should not see "McDonalds"
 	And I should not see "Zios"
 

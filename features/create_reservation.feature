@@ -9,14 +9,14 @@ Background: Given I am on the ViewRestaurant2 home page
 Scenario: Should be able to create a new reservation
 	Given I am on the ViewRestaurant2 home page
 	When I follow "Add Reservation" 
-	Then I should be on the CreateReservation home page
-	And I should see "Create Reservation"	
+	Then I should be on the CreateReservation2 home page
+	Then I should see "Create Reservation"	
 
 Scenario: Successfully Add a reservation
-	Given I am on the CreateReservation home page
+	Given I am on the CreateReservation2 home page
 	And I fill in "reservation_party_size" with "3"
 	And I fill in "reservation_notes" with "test"
-	And I fill in "reservation_reservation_date_time" with "1999-01-08 04:05:06"
+	And I fill in "reservation_reservation_date_time" with "14:05:06"
 	When I press "Create Reservation"
 	Then I should be on the ViewReservation home page
 	Then I should see "Reservation Successfully Created!"
@@ -25,12 +25,21 @@ Scenario: Return to form with invalid party_size
 	Given I am on the CreateReservation home page
 	And I fill in "reservation_party_size" with ""
 	And I fill in "reservation_notes" with "test"
-	And I fill in "reservation_reservation_date_time" with "1999-01-08 04:05:06"
+	And I fill in "reservation_reservation_date_time" with "14:05:06"
 	When I press "Create Reservation"
 	Then I should be on the CreateReservation home page
 	Then I should see "Invalid Input!"
 
 Scenario: Return to form with invalid reservation_date_time
+	Given I am on the CreateReservation home page
+	And I fill in "reservation_party_size" with "9"
+	And I fill in "reservation_notes" with "test"
+	And I fill in "reservation_reservation_date_time" with "(Time)"
+	When I press "Create Reservation"
+	Then I should be on the CreateReservation home page
+	Then I should see "Invalid Input!"
+
+Scenario: Return to form with blank reservation_date_time
 	Given I am on the CreateReservation home page
 	And I fill in "reservation_party_size" with "9"
 	And I fill in "reservation_notes" with "test"
@@ -42,4 +51,4 @@ Scenario: Return to form with invalid reservation_date_time
 Scenario: Cancel creating a new reservation
 	Given I am on the CreateReservation home page
 	When I follow "Cancel"
-	Then I should be on the ViewRestaurant2 home page
+	Then I should be on the ViewRestaurant home page

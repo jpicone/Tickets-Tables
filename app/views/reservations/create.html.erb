@@ -13,11 +13,38 @@
 			</div>
 			<% @restaurant = Restaurant.find(@reservation.restaurant_ID) %>
 			<%= form_for(@reservation, url: "/reservations/new", method: :post) do |f| %>
-					<div class="long-editor-field">
+					<div class="long-editor-field" style="float:left">
 						<%= f.label :reservation_date_time, :class => "long-input-label" %>:
-						<%= f.text_field :reservation_date_time %><br />
+						<input type="text" id="reservation_reservation_date_time" name="reservation[reservation_date_time]">
 					</div>
-					<div class="long-editor-field">
+					<div class="long-editor-field" style="float:left">
+						<select id="reservation_time">
+							<option value="Default">(Time)</option>
+							<option value="11:00am">11:00am</option>
+							<option value="11:30am">11:30am</option>
+							<option value="12:00pm">12:00pm</option>
+							<option value="12:30pm">12:30pm</option>
+							<option value="1:00pm">1:00pm</option>
+							<option value="1:30pm">1:30pm</option>
+							<option value="2:00pm">2:00pm</option>
+							<option value="2:30pm">2:30pm</option>
+							<option value="3:00pm">3:00pm</option>
+							<option value="3:30pm">3:30pm</option>
+							<option value="4:00pm">4:00pm</option>
+							<option value="4:30pm">4:30pm</option>
+							<option value="5:00pm">5:00pm</option>
+							<option value="5:30pm">5:30pm</option>
+							<option value="6:00pm">6:00pm</option>
+							<option value="6:30pm">6:30pm</option>
+							<option value="7:00pm">7:00pm</option>
+							<option value="7:30pm">7:30pm</option>
+							<option value="8:00pm">8:00pm</option>
+							<option value="8:30pm">8:30pm</option>
+							<option value="9:00pm">9:00pm</option>
+						</select>
+					</div>
+					
+					<div class="long-editor-field" style="clear:both">
 						<%= f.label :party_size, :class => "long-input-label" %>:
 						<%= f.text_field :party_size %><br />
 					</div>
@@ -26,9 +53,28 @@
 						<%= f.text_field :notes %><br />
 					</div>
 					<%= f.hidden_field :restaurant_ID, :value => @restaurant.id %>
+					<% if session[:user_id] != nil %>
+						<%= f.hidden_field :user_ID, :value => current_user.id %>
+					<% end %>
   				<%= f.submit :class => "ui-button", :id => "submit" %>
 					<%= link_to "Cancel", {controller: "restaurants", action: "details", id: @reservation.restaurant_ID}, class: "ui-button", :id => "back" %>
 			<% end %>
 		</div>
 	</body>
+	<script>
+		$(document).ready(function(){
+				$("#reservation_reservation_date_time").datepicker({
+					showAnim: "slideDown",
+					dateFormat: "yy-mm-dd"
+				});
+
+				$("#reservation_time").change(function(){
+					var value = $("#reservation_reservation_date_time").val();
+					value = value.substring(0,10);
+					value += " " + $(this).val();
+					$("#reservation_reservation_date_time").val(value);
+				});
+		  
+		});
+	</script>
 </html>

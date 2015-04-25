@@ -1,13 +1,12 @@
+#Migratation source code for Restaurants
 class CreateRestaurants < ActiveRecord::Migration
   def up
-    create_table :restaurants do |t|
-      t.string :restaurant_name
-      t.string :store_ID
-      t.string :phone_number
-      t.string :address
-      # Add fields that let Rails automatically keep track
-      # of when project tasks are added or modified:
-      t.timestamps
+    create_table :restaurants do |column|
+      column.string :restaurant_name
+      column.string :store_ID
+      column.string :phone_number
+      column.string :address
+      column.timestamps
     end
   end
 

@@ -7,11 +7,47 @@
 
 	<body>
 		<div class="main-content">
-			<h2>Reservations</h2>
-			<p>
-			 This will one day say a welcome message to visitors
-			</p>
+			<h2> Welcome to Tickets & Tables! </h2>
+			<div class="reservations">
+					<% if session[:user_id] != nil %>
+					<h3>My Reservations:</h3>
+					<table id="MyReservations" class="cell-border dataTable">  
+						<thead>  
+							<tr>  
+							<th>Restaurant Name</th>
+							<th>Reservation Time</th>
+							<th>Party Size</th> 
+							<th>Notes</th>
+							</tr>  
+						</thead>  
+						<tbody>
+							<% @reservations = Reservation.where(user_ID: session[:user_id]) %>
+							<% @reservations.each do |reservation| %>
+							<% @restaurant = Restaurant.where(id: reservation.restaurant_ID).first %>
+							<tr>  
+								<td><%= link_to @restaurant.restaurant_name, :controller => :reservations, :action	=> :details, :id => reservation.id %></td>  
+								<td><%= reservation.reservation_date_time %></td>  
+								<td><%= reservation.party_size %></td> 
+								<td><%= reservation.notes %></td>  
+							</tr>
+							<% end %>
+						</tbody>  
+					</table>
+					<% else %>
+							<h4>Sign in to manage your reservations!</h4>
+							<a href="/login" class="ui-button">Sign In</a>
+					<% end %>
+				</div>
 		</div>
 		
 	</body>
+
+	<script>
+		$(document).ready(function(){
+
+		  	$('.dataTable').DataTable();
+
+		});
+	</script>
+
 </html>

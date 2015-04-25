@@ -5,7 +5,11 @@ Given(/^the following restaurants exist:$/) do |table|
 		Restaurant.create!(task)
   end
 end
-
+Given(/^the following users exist:$/) do |table|
+  table.hashes.each do |task|
+		User.create!(task)
+  end
+end
 # Make sure that one string (regexp) occurs before or after another one
 #   on the same page
 

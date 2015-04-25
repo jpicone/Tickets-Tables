@@ -8,6 +8,9 @@
 	<body>
 		<div class="main-content ">
 			<h2>Edit Reservation</h2>
+			<div id="error" class="error">
+				<% if flash[:error] %> <%= flash[:error] %> <% end %>
+			</div>
 			<%= form_for(@reservation, url: "/reservations/save", method: :post) do |f| %>
 					<div class="long-editor-field">
 						<%= f.label :reservation_date_time, :class => "long-input-label" %>:

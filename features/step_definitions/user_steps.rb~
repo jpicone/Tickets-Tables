@@ -1,0 +1,25 @@
+Given /^I have one\s+user "([^\"]*)" "([^\"]*)" with email "([^\"]*)" and password "([^\"]*)" and role "([^\"]*)"$/ do |first_name,last_name,email,password,role|
+  @user = User.new(:email => email,
+									 :first_name=>first_name,
+                   :last_name=>last_name,
+                   :password => password,
+                   :password_confirmation => password,
+									 :role => role)
+   @user.save!
+end
+
+Given /^I am an authenticated user$/ do
+	first_name = 'Anonymous'
+  last_name = 'Anonymous'
+  email = 'anonymous@anonymous.net'
+  password = 'password'
+	role = 'Admin'
+
+  Given %{I have one user "#{first_name}" "#{last_name}" with email "#{email}" and password "#{password}" and role "#{role}"}
+  And %{I go to the Login home page}
+	And %{I fill in "user_first_name" with "#{first_name}"}
+  And %{I fill in "user_last_name" with "#{last_name}"}
+  And %{I fill in "user_password" with "#{password}"}
+	And %{I fill in "user_role" with "#{role}"}
+  And %{I press "Sign in"}
+end
