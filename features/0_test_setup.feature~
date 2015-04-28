@@ -1,0 +1,29 @@
+Feature: Set up all cucumber tests to run independently (in any order works).
+
+Scenario: Should be able to edit a created restaraunt 1
+	Given I am on the CreateRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "Outback"
+	And I fill in "restaurant_store_ID" with "999"
+	And I fill in "restaurant_phone_number" with "111-222-3333"
+	And I fill in "restaurant_address" with "1234 Road"
+	When I press "submit"
+	Then I should see "Restaurant Successfully Created!"
+
+Scenario: Succesfully create user account 2
+	Given I am on the Signup home page
+	When I fill in "user_first_name" with "Anonymous"
+	And I fill in "user_last_name" with "Anonymous"
+	And I fill in "user_email" with "anonymous@anonymous.com"
+	And I fill in "user_password" with "password"
+	And I fill in "user_password_confirmation" with "password"
+	And I press "Sign Up"
+	Then I should see "Thank you for signing up!"
+
+Scenario: Successfully Add a reservation 3
+	Given I am on the CreateReservation2 home page
+	And I fill in "reservation_party_size" with "3"
+	And I fill in "reservation_notes" with "test"
+	And I fill in "reservation_reservation_date_time" with "14:05:06"
+	When I press "Create Reservation"
+	Then I should be on the ViewReservation home page
+	Then I should see "Reservation Successfully Created!"

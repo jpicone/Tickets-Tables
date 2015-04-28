@@ -9,6 +9,7 @@
       </ul>
     </div>
   <% end %>
+	<h2> Sign Up: </h2>
   <div class="field">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %>
@@ -33,5 +34,5 @@
     <%= f.password_field :password_confirmation %>
   </div>
   
-  <div class="actions"><%= f.submit "Sign Up" %></div>
+  <div class="actions"><%= f.submit "Sign Up", :class => "ui-button"%></div>
 <% end %>

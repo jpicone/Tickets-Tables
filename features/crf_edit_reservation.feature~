@@ -8,7 +8,7 @@ Background: I should be on the ViewRestaurant Page
 
 Scenario: Should be able to edit a reservation
 	Given I am on the ViewRestaurant2 home page
-	When I follow "Anonymous" 
+	When I follow "MacNGrill" 
 	Then I should be on the ViewReservation home page
 	And I should see "Edit"
 

@@ -9,7 +9,7 @@ describe ReservationsController do
       Reservation.should_receive(:find).with('20').and_return(reservation)
 			Reservation.should_receive(:find).with('20').and_return(reservation)
       reservation.should_receive(:delete)
-      post :confirmDelete, { :id => '20' }
+      post :confirm_delete, { :id => '20' }
     end
   end
 

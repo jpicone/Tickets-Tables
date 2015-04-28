@@ -1,19 +1,16 @@
 require 'spec_helper'
 require 'rails_helper'
 
-feature 'Destroying Reservation ' do
+feature 'Destroying Restaurants ' do
   before do
-    reservation = FactoryGirl.create(:reservation , notes: "Test to destroy" , reservation_date_time: "2015-04-13 00:20:15")
-    visit '/reservations/details/11'
-    expect(page).to have_content("Test to destroy")
+    visit '/restaurants/delete/2'
+    expect(page).to have_content("Are you sure")
   end
-  scenario "Destroy a Reservation" do
-    click_link "Delete"
-    expect(page.current_url).to eql('http://www.example.com/reservations/delete/11')
-    expect(page).to have_content("Test to destroy")
+  scenario "Destroy a Restaurant" do
+    expect(page.current_url).to eql('http://www.example.com/restaurants/delete/2')
+    expect(page).to have_content("Are you sure you want to delete this restaurant?")
     click_link "Confirm Delete"
-    expect(page).to have_no_content("Test to destroy")
-    expect(page).to have_content("Reservation successfully deleted!")
+    expect(page).to have_content("Restaurant successfully deleted!")
   end
 
 end

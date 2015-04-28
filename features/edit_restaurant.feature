@@ -1,0 +1,71 @@
+Feature: Edit a Restaurant
+ 
+  As a Administrator
+  So that I can edit a restaurant
+  I want to be able to edit the details of a restaurant of my choice from a list of restaurants
+
+Background: Given I am on the restaraunts page
+
+Scenario: Should be able to edit a created restaraunt
+	Given I am on the ViewRestaurant2 home page
+	When I go to the EditRestaurant home page
+	Then I should see "Edit Restaurant"
+
+Scenario: Successfully edit a Restaurant
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with "111-555-3333"
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Restaurant Successfully Updated!"
+
+Scenario: Unsuccessfully edit a Restaurant with blank name
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with ""
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with "111-555-3333"
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with blank store ID
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with ""
+	And I fill in "restaurant_phone_number" with "111-555-3333"
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with blank phone number
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with ""
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with misformatted phone number
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with "1112223333"
+  And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with blank address
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with "111-222-3333"
+  And I fill in "restaurant_address" with ""
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Cancel editing a restaraunt
+	Given I am on the EditRestaurant home page
+	When I follow "back" 
+	Then I should see "Details"

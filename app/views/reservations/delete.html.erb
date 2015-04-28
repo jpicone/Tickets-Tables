@@ -34,7 +34,7 @@
 				<%=label_tag @reservation.notes, nil, id: 'notes' %>
 			</div></br></hr>
 			<%= link_to "Cancel", {controller: "reservations", action: "details", id: @reservation.id}, :class => "ui-button", :id => "back"  %>
-			<%= link_to "Confirm Delete", {controller: "reservations", action: "confirmDelete", id: @reservation.id}, :class => "ui-button", :id => "delete" %>
+			<%= link_to "Confirm Delete", {controller: "reservations", action: "confirm_delete", id: @reservation.id}, :class => "ui-button", :id => "delete" %>
 		</div>
 	</body>
 </html>

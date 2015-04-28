@@ -1,3 +1,4 @@
+#This is the restaurants controller source code.
 class RestaurantsController < ApplicationController
 
   def home
@@ -12,7 +13,7 @@ class RestaurantsController < ApplicationController
 		@restaurant = Restaurant.find(params[:id])
 	end
 
-	def confirmDelete
+	def confirm_Delete
 		if Restaurant.find(params[:id]).delete
 			flash[:success] = "Restaurant successfully deleted!"
 		else

@@ -9,7 +9,7 @@ describe RestaurantsController do
 
       Restaurant.should_receive(:find).with('20').and_return(restaurant)
       restaurant.should_receive(:delete)
-      post :confirmDelete, { :id => '20' }
+      post :confirm_delete, { :id => '20' }
     end
   end
 

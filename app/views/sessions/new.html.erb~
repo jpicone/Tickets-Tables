@@ -1,8 +1,16 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+ 		<link rel="stylesheet" type="text/css" href="../../assets/application.css" />
+ 	</head>
 
-
+<div id="error" class="error">
+<% if flash[:error] %> <%= flash[:error] %> <% end %>
+</div>
 
 <h1>Log In</h1>
 
+<body>
 <%= form_tag sessions_path do %>
   <div class="field">
     <%= label_tag :email %><br />
@@ -12,7 +20,11 @@
     <%= label_tag :password %><br />
     <%= password_field_tag :password %>
   </div>
-  <div class="actions"><%= submit_tag "Log In" %></div>
+  <div class="actions">
+		<%= submit_tag "Log In", :class => "ui-button" %>
+		<%= link_to "Sign Up", "/signup", class: "ui-button", :id => "SignUp" %>	
+	</div>
 <% end %>
-
+</body>
+</html>
 

@@ -6,21 +6,9 @@ Feature: Edit a Restaurant
 
 Background: Given I am on the restaraunts page
 
-Scenario: Should be able to create a new restaurant
-	Given I am on the Restaurants home page	
-	When I follow "add" 
-	Then I should see "Create New Restaurant"	
-
-Scenario: Should be able to edit a restaraunt
-	Given I am on the CreateRestaurant home page
-	When I fill in "restaurant_restaurant_name" with "Outback"
-	And I fill in "restaurant_store_ID" with "999"
-	And I fill in "restaurant_phone_number" with "111-222-3333"
-  And I fill in "restaurant_address" with "1234 Road"
-	When I press "submit"
-	Then I should see "Add New Restaurant"
+Scenario: Should be able to edit a created restaraunt 1
 	Given I am on the ViewRestaurant2 home page
-	When I follow "edit" 
+	When I go to the EditRestaurant home page
 	Then I should see "Edit Restaurant"
 
 Scenario: Successfully edit a Restaurant
@@ -30,7 +18,7 @@ Scenario: Successfully edit a Restaurant
 	And I fill in "restaurant_phone_number" with "111-555-3333"
   And I fill in "restaurant_address" with "5678 Road"
 	When I press "submit"
-	Then I should see "Add New Restaurant"
+	Then I should see "Restaurant Successfully Updated!"
 
 Scenario: Unsuccessfully edit a Restaurant with blank name
 	Given I am on the EditRestaurant home page
@@ -65,6 +53,15 @@ Scenario: Unsuccessfully edit a Restaurant with misformatted phone number
 	And I fill in "restaurant_store_ID" with "888"
 	And I fill in "restaurant_phone_number" with "1112223333"
   And I fill in "restaurant_address" with "5678 Road"
+	When I press "submit"
+	Then I should see "Invalid Input"
+
+Scenario: Unsuccessfully edit a Restaurant with blank address
+	Given I am on the EditRestaurant home page
+	When I fill in "restaurant_restaurant_name" with "MacNGrill"
+	And I fill in "restaurant_store_ID" with "888"
+	And I fill in "restaurant_phone_number" with "111-222-3333"
+  And I fill in "restaurant_address" with ""
 	When I press "submit"
 	Then I should see "Invalid Input"
 

@@ -3,8 +3,7 @@ require 'rails_helper'
 
 feature 'Creating Restaurant' do
   before do
-    visit '/restaurants/home'
-    click_link "Add New Restaurant"
+    visit '/restaurants/create'
   end
   scenario 'can create a new restaurant' do
     fill_in 'restaurant_restaurant_name', with: "test name"

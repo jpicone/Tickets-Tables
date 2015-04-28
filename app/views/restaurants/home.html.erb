@@ -5,7 +5,16 @@
  	</head>
 
 <body>
- <%= link_to "Add New Restaurant", {controller: "restaurants", action: "create"}, :class => "ui-button", :id => "add"%>
+	<% @authorized = false %>
+	<% if session[:user_id] != nil %>
+		<% @authorized = true %>
+	<% end %>
+	<% if @authorized == true%>
+		<% @user = User.find(session[:user_id]) %>
+		<% if @user.role == "admin" || @user.role == "owner" %>
+		 	<%= link_to "Add New Restaurant", {controller: "restaurants", action: "create"}, :class => "ui-button", :id => "add"%>
+		<% end %>
+	<% end %>
 			<div id="success" class="success">
 				<% if flash[:success] %> <%= flash[:success] %> <% end %>
 			</div>

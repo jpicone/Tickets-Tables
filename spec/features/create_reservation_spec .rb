@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'rails_helper'
 
 feature 'Creating Reservation' do
-  before  do
+  before  do		
     restaurant = FactoryGirl.create(:restaurant, restaurant_name: "Reservation Test Restaurant")
   end
   scenario "Create new Restaurant" do

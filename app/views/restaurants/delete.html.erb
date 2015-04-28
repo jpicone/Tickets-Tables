@@ -33,7 +33,7 @@
 				<%=label_tag @restaurant.phone_number, nil, id: 'phone_number' %>
 			</div></br></hr>
 			<%= link_to "Cancel", {controller: "restaurants", action: "details", id: @restaurant.id}, :class => "ui-button", :id => "back"  %>
-			<%= link_to "Confirm Delete", {controller: "restaurants", action: "confirmDelete", id: @restaurant.id}, :class => "ui-button", :id => "delete" %>
+			<%= link_to "Confirm Delete", {controller: "restaurants", action: "confirm_delete", id: @restaurant.id}, :class => "ui-button", :id => "delete" %>
 		</div>
 	</body>
 </html>

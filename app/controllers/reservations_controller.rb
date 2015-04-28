@@ -9,7 +9,7 @@ class ReservationsController < ApplicationController
 		@reservation = Reservation.find(params[:id])
 	end
 
-	def confirmDelete
+	def confirm_delete
 		@reservation = Reservation.find(params[:id])
 		@restaurant = Restaurant.find(@reservation.restaurant_ID)
 		if Reservation.find(@reservation.id).delete

@@ -18,7 +18,7 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-  <%= f.collection_select :role, User::ROLES, :to_s, :humanitize %>
+  <%= f.collection_select :role, User::ROLES, :to_s, :humanize %>
   </div>
   <div class="field">
     <%= f.label :email %><br />
@@ -33,5 +33,5 @@
     <%= f.password_field :password_confirmation %>
   </div>
   
-  <div class="actions"><%= f.submit "Sign Up" %></div>
+  <div class="actions"><%= f.submit "Sign Up", :class => "ui-button"%></div>
 <% end %>

@@ -13,7 +13,7 @@ class RestaurantsController < ApplicationController
 		@restaurant = Restaurant.find(params[:id])
 	end
 
-	def confirmDelete
+	def confirm_delete
 		if Restaurant.find(params[:id]).delete
 			flash[:success] = "Restaurant successfully deleted!"
 		else
