@@ -51,9 +51,10 @@
 					</div></br></hr>	
 					<%= link_to "Back to Restaurant", {controller: "restaurants", action: "details", id: @restaurant.id}, :class => "ui-button", :id => "back"  %>
 
+					
 					<% if @authorized == true %>
 						<% @user = User.find(session[:user_id]) %>
-						<% if @reservation.user_ID == @user.id %>
+						<% if @reservation.user_ID == @user.id || @user.role == "admin"%>
 							<%= link_to "Edit", {controller: "reservations", action: "edit", id: @reservation.id}, :class => "ui-button", :id => "edit"  %>
 							<%= link_to "Delete", {controller: "reservations", action: "delete", id: @reservation.id}, :class => "ui-button", :id => "delete" %>
 						<% end %>

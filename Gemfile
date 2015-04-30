@@ -19,9 +19,7 @@ end
 group :test do
   gem 'cucumber-rails',                  :require => false
   gem 'cucumber-rails-training-wheels'
-  gem 'database_cleaner'
   gem 'selenium-webdriver'
-  gem 'capybara'
   gem 'factory_girl_rails','~> 4.2.1'
   gem 'simplecov', :require => false, :group => :test
   gem 'rspec-activemodel-mocks', '~> 1.0.1'

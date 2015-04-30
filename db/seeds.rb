@@ -13,9 +13,3 @@ restaurants = [{:restaurant_name => "Outback", :store_ID => "00001", :phone_numb
 restaurants.each do |task|
    Restaurant.create!(task)
 end
-
-#reservations = [{:restaurant_ID => 1, :party_size => 2, :user_ID => 0, :notes => "test"}]
-#
-#reservations.each do |task|
-#   Reservation.create!(task)
-#end
