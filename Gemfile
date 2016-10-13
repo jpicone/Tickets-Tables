@@ -1,4 +1,4 @@
-ruby '2.1.3'
+ruby '2.3.1'
 source 'http://rubygems.org'
 gem 'rails', '4.1.6'
 
@@ -14,6 +14,8 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'thin'
+  gem 'json', '~> 1.8.3'
+  gem 'react-rails', '~> 1.0'
 end
 
 group :test do
@@ -43,7 +45,7 @@ end
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails' 
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 gem 'haml'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'

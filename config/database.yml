@@ -3,7 +3,7 @@ test: &test
   encoding: unicode
   database: myapp_test
   pool: 5
-  username: myapp
+  username: postgres
   password: password
 
 development: &development
@@ -11,5 +11,5 @@ development: &development
   encoding: unicode
   database: myapp_development
   pool: 5
-  username: myapp
+  username: postgres
   password: password

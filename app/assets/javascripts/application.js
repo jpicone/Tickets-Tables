@@ -16,4 +16,7 @@
 //= require_self
 //= require jquery-ui
 //= require dataTables/jquery.dataTables
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .
